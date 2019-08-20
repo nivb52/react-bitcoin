@@ -19,9 +19,9 @@ export default class ContactFilter extends React.Component {
                             onChange={this.handleChange}
                         />
                     }
-                    <div className="inline mar-left-1rem">Sort By:</div>
-                    <div className="inline mar-left-1rem pointer">Name</div> /
-                <div className="inline mar-left-1rem pointer">Email</div>
+                    <div className="inline mar-left-1rem ">Sort By:</div>
+                    <div className="inline mar-left-1rem  mar-top-1rem pointer">Name</div> /
+                <div className="inline mar-left-1rem  mar-top-1rem pointer">Email</div>
                 </div>
             </section>
         )
