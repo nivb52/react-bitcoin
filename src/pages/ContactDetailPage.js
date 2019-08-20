@@ -34,20 +34,23 @@ export default class ContactDetailPage extends React.Component {
             <section>
                 {
                     contact &&
-                    <div className="details">
-                        <div className="back-arrow" onClick={this.props.history.goBack}> back  </div>
-                        <h3>  {contact.name} </h3>
-                        <img alt={contact.name} width="50px"
+                    <div className="flex justify-center align-center">
+                        <button className="mar-1rem pad-halfrem" onClick={this.props.history.goBack}> back  </button>
+                        <h3 className="subtitle text-white marginless">  {contact.name} </h3>
+                        <img alt={contact.name} width="50vmin"
                             src={`https://robohash.org/${contact.name}.png`}></img>
 
-                        <span>{contact.email} </span>
+                        <span className="mar-1rem">{contact.email} </span>
                         <span> {contact.phone}  </span>
 
                     </div>
 
                 }
-                <button onClick={this.handleEdit}> Edit </button>
-                <button onClick={this.deleteContact}>Delete</button>
+
+                <div className="flex-row justify-evenly mar-2rem">
+                <button className="pad-halfrem" onClick={this.handleEdit}> Edit </button>
+                <button className="pad-halfrem" onClick={this.deleteContact}>Delete</button>
+                </div>
 
                 {
                     // EDIT CONTACT

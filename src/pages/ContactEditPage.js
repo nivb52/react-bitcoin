@@ -30,14 +30,14 @@ export default class ContactEditPage extends React.Component {
         const { contact } = this.state || false
         return (
             <section >
-                <button className="back-arrow" 
-                onClick={this.props.history.goBack}> back  </button>
+                <button className="mar-1rem pad-halfrem"
+                    onClick={this.props.history.goBack}> back  </button>
 
                 {contact &&
                     <div>
 
                         <h1 className="title is-2"> Edit Contact</h1>
-                        
+
                     </div>
                 }
                 {!contact &&
@@ -45,31 +45,34 @@ export default class ContactEditPage extends React.Component {
                         <h1> Add New Contact</h1>
                     </div>
                 }
-                <form  onSubmit={this.handleSubmit}>
+                <div className="container width-80">
 
-                    <input name="name"
-                    className="text-black"
-                        type="text" maxLength="50" minLength="3"
-                        onChange={this.handleChange}
-                        value={(contact && contact.name) ? contact.name : ''}
-                    />
+                    <form className="flex justify-evenly mar-1rem" onSubmit={this.handleSubmit}>
 
-                    <input name="email" type="email"
-                    className="text-black"
-                        onChange={this.handleChange}
-                        value={(contact && contact.email) ? contact.email : ''}
-                    />
+                        <input name="name"
+                            className="input-box mar-1rem"
+                            type="text" maxLength="50" minLength="3"
+                            onChange={this.handleChange}
+                            value={(contact && contact.name) ? contact.name : ''}
+                        />
 
-                    <input name="phone" type="phone"
-                    className="text-black"
-                        onChange={this.handleChange}
-                        value={(contact && contact.phone) ? contact.phone : ''}
+                        <input name="email" type="email"
+                            className="input-box mar-1rem"
+                            onChange={this.handleChange}
+                            value={(contact && contact.email) ? contact.email : ''}
+                        />
 
-                    />
+                        <input name="phone" type="phone"
+                            className="input-box mar-1rem"
+                            onChange={this.handleChange}
+                            value={(contact && contact.phone) ? contact.phone : ''}
 
-                    <button>Save</button>
+                        />
 
-                </form>
+                        <button className="pad-1rem prim-bcg">Save</button>
+
+                    </form>
+                </div>
 
 
 
