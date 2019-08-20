@@ -1,0 +1,27 @@
+.login-btn{
+    color: #fff;
+    font-size: 1.5rem;
+    width: 90vw;
+    max-width: 270px;
+    height: 8vh;
+    background-color: #ebb811;
+    border: none;
+}
+
+.input-box {
+    color: white;
+    font-size: 1.1rem;
+    cursor: auto;
+    border: none;
+    border-bottom: 1px solid #a8a8a8;
+    background-color: #222222;
+}
+.input-box:hover{
+    color: white;
+}
+
+
+.login-user-icon{
+    width:20px;
+    color:#ebb811;
+}
