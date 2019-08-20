@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Logo} from './icons/LogoIcon.js'
 
-export default class Logo extends Component {
+export default class LogoContainer extends Component {
     render() {
 
         return (
