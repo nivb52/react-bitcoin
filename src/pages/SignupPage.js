@@ -31,7 +31,7 @@ class SignupPage extends Component {
                 <form onSubmit={this.handleSubmit}>
 
                     <div className="flex flex-nowarp mar-1rem align-center justify-center">
-                        <UserIcon className='login-user-icon' />
+                        <UserIcon className='login-user-icon prim-color' />
                         <input
                             className="input-box mar-left-1rem"
                             name="username"
@@ -46,7 +46,7 @@ class SignupPage extends Component {
 
                     </div>
                     <div className="flex justify-center align-center mar-2rem ">
-                        <input className="login-btn pointer" type="submit" value="Submit" />
+                        <input className="login-btn prim-bcg pointer" type="submit" value="Submit" />
                     </div>
                 </form>
 
