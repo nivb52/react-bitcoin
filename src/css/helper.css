@@ -1,3 +1,6 @@
+/* =============== */
+/* LAYOUT */
+
 .flex{
     display:flex;
     flex-direction: column;
@@ -29,8 +32,6 @@ align-items: center;
 }
 
 
-
-
 .inline {
     display: inline-block;
 }
@@ -41,10 +42,16 @@ align-items: center;
     position: relative;
     width: auto;
 }
+
+.width-80 {
+    width: 80%;
+}
+/* =================== */
+ /* SMALL UTILS */
+ /* ==================== */
 /* Pointer */
 .pointer {
     cursor: pointer;
-
 }
 
 /* HOVER */
@@ -52,8 +59,14 @@ align-items: center;
 .hover-white:hover {
     color: #fff;
 }
+.hover-black:hover {
+    color: #000;
+}
 
+/* ========================== */
 /* TEXT */
+ /* ==================== */
+
 .text-start{
     text-align: start;
 }
@@ -92,7 +105,13 @@ align-items: center;
     word-break: break-word;
 }
 
+
+/* ========================= */
 /* MARGIN */
+ /* ==================== */
+.marginless {
+    margin: 0 !important;
+}
 .mar-auto {
     margin: 0 auto;
 }
@@ -104,6 +123,8 @@ align-items: center;
     margin: 2rem;
 }
 
+
+/* /left/ */
 .mar-left-1rem {
     margin-left: 1rem;
 }
@@ -120,8 +141,46 @@ align-items: center;
     margin-left: 5rem;
 }
 
-/* PADDING */
+/* /top/ */
+.mar-top-1rem {
+    margin-top: 1rem;
+}
+.mar-top-2rem {
+    margin-top: 2rem;
+}
+.mar-top-3rem {
+    margin-top: 3rem;
+}
+.mar-top-4rem {
+    margin-top: 4rem;
+}
+.mar-top-5rem {
+    margin-top: 5rem;
+}
 
+/* bottom */
+.mar-bottom-1rem {
+    margin-bottom: 1rem;
+}
+.mar-bottom-2rem {
+    margin-bottom: 2rem;
+}
+.mar-bottom-3rem {
+    margin-bottom: 3rem;
+}
+.mar-bottom-4rem {
+    margin-bottom: 4rem;
+}
+.mar-bottom-5rem {
+    margin-bottom: 5rem;
+}
+/* ====================== */
+/* PADDING */
+ /* ==================== */
+
+.pad-halfrem, .pad-0p5-rem {
+    padding: 0.5rem;
+}
 .pad-1rem {
     padding: 1rem;
 }
