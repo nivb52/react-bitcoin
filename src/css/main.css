@@ -1,11 +1,11 @@
 @import 'reset.css';
-@import 'helper.css';
+@import 'layout.css';
+@import 'utills.css';
 @import 'margins.css';
 @import 'paddings.css';
 @import 'texts.css';
-@import 'header.css';
-@import 'form.css';
-@import 'contact-page.css';
+@import 'forms.css';
+/* @import 'contact-page.css'; */
 
 body {
     background-color: #252525;
