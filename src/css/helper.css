@@ -1,0 +1,131 @@
+.flex{
+    display:flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+.flex-warp {
+    flex-flow: wrap;
+} 
+.flex-nowarp {
+    flex-flow: nowrap;
+} 
+
+
+.align-center {
+align-items: center;
+    
+}
+.justify-center {
+    justify-content: center;
+
+}
+.justify-evenly {
+
+    justify-content: space-evenly;
+}
+
+
+
+
+.inline {
+    display: inline-block;
+}
+
+.container {
+    flex-grow: 1;
+    margin: 0 auto;
+    position: relative;
+    width: auto;
+}
+/* Pointer */
+.pointer {
+    cursor: pointer;
+
+}
+
+/* HOVER */
+
+.hover-white:hover {
+    color: #fff;
+}
+
+/* TEXT */
+.text-start{
+    text-align: start;
+}
+.text-end{
+    text-align: end;
+}
+.text-center{
+    text-align: center;
+}
+
+.text-white {
+    color: white
+}
+.text-grey {
+    color: grey
+}
+.text-black {
+    color: black
+}
+
+
+.is-1 {
+    font-size: 3.5rem;
+}
+.is-2 {
+    font-size: 2.5rem;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.125;
+}
+
+.subtitle, .title {
+    word-break: break-word;
+}
+
+/* MARGIN */
+.mar-auto {
+    margin: 0 auto;
+}
+
+.mar-1rem{
+    margin: 1rem;
+}
+.mar-2rem{
+    margin: 2rem;
+}
+
+.mar-left-1rem {
+    margin-left: 1rem;
+}
+.mar-left-2rem {
+    margin-left: 2rem;
+}
+.mar-left-3rem {
+    margin-left: 3rem;
+}
+.mar-left-4rem {
+    margin-left: 4rem;
+}
+.mar-left-5rem {
+    margin-left: 5rem;
+}
+
+/* PADDING */
+
+.pad-1rem {
+    padding: 1rem;
+}
+
+.pad-top-1rem {
+    padding-top: 1rem;
+}

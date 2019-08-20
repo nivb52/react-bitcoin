@@ -1,0 +1,28 @@
+@import 'reset.css';
+@import 'helper.css';
+@import 'header.css';
+@import 'form.css';
+@import 'contact-page.css';
+
+body {
+    background-color: #252525;
+    color:whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0 auto;
+    min-height: 100vh
+}
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
