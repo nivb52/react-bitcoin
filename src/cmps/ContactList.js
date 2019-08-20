@@ -16,7 +16,7 @@ class ContactList extends React.Component {
         return (
             <section className="contact-center" >
                 <div className="add-user-pos">
-                    <button className="add-user" onClick={this.handleNew}>&#43;</button>
+                    <button className="add-user prim-bcg" onClick={this.handleNew}>&#43;</button>
                 </div>
                 {this.props.contacts.map(currContact =>
                     <ContactPreview contact={currContact}

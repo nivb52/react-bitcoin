@@ -11,12 +11,13 @@
      
     justify-content: space-around;
     width: 100vw;
-    height: 8vh;
-    max-width: 500px;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.149725);
-    margin-left: inherit;
 
-    animation: slide-up 0.8s ease;
+    max-width: 500px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.15);
+    margin-left: inherit;
+    padding-top: 1rem;
+
+    animation: slide-up 0.7s ease;
     transition: all 0.35s;
 
 }
@@ -55,8 +56,6 @@
     height: calc(30px + 4vmin);
     border-radius: 40px;
 
-    background-color: rgba(220,20,60,0.9);
-    /* background-color: #f68e06; */
     cursor: pointer;
     color: white;
 }
