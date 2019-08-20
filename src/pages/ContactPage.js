@@ -6,7 +6,6 @@ import React, { Component } from 'react';
 import ContactService from '../services/ContactService'
 import ContactList from '../cmps/ContactList'
 import ContactFilter from '../cmps/ContactFilter/ContactFilter'
-import AppHeader from '../cmps/AppHeader'
 
 
 export default class ContactPage extends Component {
@@ -30,7 +29,6 @@ export default class ContactPage extends Component {
         return (
             <section >
                 <div className="container">
-                    <AppHeader></AppHeader>
                     <ContactFilter filterBy={this.state.filterBy}
                     />
                     <ContactList contacts={contacts} />

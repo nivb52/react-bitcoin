@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import UtillService from '../services/UtillService'
-import {Logo} from './icons/Logo'
-
+ 
 export default class Header extends Component {
     render() {
 const month = new Date().getMonth()
