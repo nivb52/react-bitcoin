@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react-bitcoin/static/css/main.4d357170.chunk.css",
+    "main.js": "/react-bitcoin/static/js/main.da5d3ff0.chunk.js",
+    "main.js.map": "/react-bitcoin/static/js/main.da5d3ff0.chunk.js.map",
+    "runtime~main.js": "/react-bitcoin/static/js/runtime~main.7df476b6.js",
+    "runtime~main.js.map": "/react-bitcoin/static/js/runtime~main.7df476b6.js.map",
+    "static/js/2.d89e069c.chunk.js": "/react-bitcoin/static/js/2.d89e069c.chunk.js",
+    "static/js/2.d89e069c.chunk.js.map": "/react-bitcoin/static/js/2.d89e069c.chunk.js.map",
+    "index.html": "/react-bitcoin/index.html",
+    "precache-manifest.0a979ad639cb880f8b92452026ffbdfa.js": "/react-bitcoin/precache-manifest.0a979ad639cb880f8b92452026ffbdfa.js",
+    "service-worker.js": "/react-bitcoin/service-worker.js",
+    "static/css/main.4d357170.chunk.css.map": "/react-bitcoin/static/css/main.4d357170.chunk.css.map",
+    "static/media/user.894a52b8.svg": "/react-bitcoin/static/media/user.894a52b8.svg"
+  }
+}
