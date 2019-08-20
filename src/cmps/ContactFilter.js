@@ -4,7 +4,7 @@ Allows free text search by name / phone and calls onFilter()
 on every keypress (onChange),passing a filter object e.g. : {term: 'puk'}
 */
 import React from 'react'
-import './contact-filter.css';
+// import './contact-filter.css';
 
 export default class ContactFilter extends React.Component {
     
@@ -20,8 +20,8 @@ export default class ContactFilter extends React.Component {
                         />
                     }
                     <div className="inline mar-left-1rem">Sort By:</div>
-                    <div className="inline mar-left-1rem">Name</div> /
-                <div className="inline mar-left-1rem">Email</div>
+                    <div className="inline mar-left-1rem pointer">Name</div> /
+                <div className="inline mar-left-1rem pointer">Email</div>
                 </div>
             </section>
         )
