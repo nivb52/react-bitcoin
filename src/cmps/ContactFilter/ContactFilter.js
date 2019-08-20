@@ -12,11 +12,10 @@ export default class ContactFilter extends React.Component {
         
         return (
 
-            <section>
-                <div className="flex flex-row text-grey">
-
+            <section className="flex flex-row justify-center">
+                <div  className="text-grey">
                     {
-                        <input className="text-black"
+                        <input className="input-box"
                             onChange={this.handleChange}
                         />
                     }
