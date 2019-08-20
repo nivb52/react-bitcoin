@@ -36,6 +36,7 @@ align-items: center;
     display: inline-block;
 }
 
+/* CONTAINERS */
 .container {
     flex-grow: 1;
     margin: 0 auto;
@@ -46,21 +47,7 @@ align-items: center;
 .width-80 {
     width: 80%;
 }
-/* =================== */
- /* SMALL UTILS */
- /* ==================== */
-/* Pointer */
-.pointer {
-    cursor: pointer;
-}
 
-/* HOVER */
 
-.hover-white:hover {
-    color: #fff;
-}
-.hover-black:hover {
-    color: #000;
-}
 
 
