@@ -16,15 +16,15 @@ export default function NavHeader() {
     return (
         <Router >
             <div className="mar-top-1rem mar-right-1rem text-end ">
-                <NavLink className="scnd-color hover-white" to="/">Home</NavLink>
+                <NavLink className="prim-color hover-white" to="/">Home</NavLink>
                 <span> &nbsp; | &nbsp; </span>
-                <NavLink className="scnd-color hover-white" to="/contacts">Contacts</NavLink>
+                <NavLink className="prim-color hover-white" to="/contacts">Contacts</NavLink>
                 <span> &nbsp; | &nbsp; </span>
-                <NavLink className="scnd-color hover-white" to="/charts">Charts</NavLink>
+                <NavLink className="prim-color hover-white" to="/charts">Charts</NavLink>
                 <span> &nbsp; | &nbsp; </span>
-                <NavLink className="scnd-color hover-white" to="/signup">Signup</NavLink>
+                <NavLink className="prim-color hover-white" to="/signup">Signup</NavLink>
                 <span> &nbsp; | &nbsp; </span>
-                <NavLink className="scnd-color hover-white" to="/todos">Todos</NavLink>
+                <NavLink className="prim-color hover-white" to="/todos">Todos</NavLink>
             </div>
 
             <hr />
