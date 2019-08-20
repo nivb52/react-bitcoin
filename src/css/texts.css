@@ -1,0 +1,47 @@
+/* ========================== */
+/* TEXT */
+ /* ==================== */
+
+ .text-start{
+    text-align: start;
+}
+.text-end{
+    text-align: end;
+}
+.text-center{
+    text-align: center;
+}
+
+.text-white {
+    color: white
+}
+.text-grey {
+    color: grey
+}
+.text-black {
+    color: black
+}
+
+
+.is-1 {
+    font-size: 3.5rem;
+}
+.is-2 {
+    font-size: 2.5rem;
+}
+.is-3 {
+    font-size: 2rem;
+}
+.is-4 {
+    font-size: 1.8rem;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.125;
+}
+
+.subtitle, .title {
+    word-break: break-word;
+}

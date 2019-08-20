@@ -1,5 +1,8 @@
 @import 'reset.css';
 @import 'helper.css';
+@import 'margins.css';
+@import 'paddings.css';
+@import 'texts.css';
 @import 'header.css';
 @import 'form.css';
 @import 'contact-page.css';
@@ -35,3 +38,12 @@ body {
 .prim-bcg {
     background-color: #ebb811;
 }
+
+.scnd-color {
+  color:#dc143ce6;
+}
+
+.scnd-bcg {
+  background-color: #dc143ce6;
+}
+ 

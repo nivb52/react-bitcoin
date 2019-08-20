@@ -1,0 +1,87 @@
+
+/* ========================= */
+/* MARGIN */
+ /* ==================== */
+ .marginless {
+    margin: 0 !important;
+}
+.mar-auto {
+    margin: 0 auto;
+}
+
+.mar-1rem{
+    margin: 1rem;
+}
+.mar-2rem{
+    margin: 2rem;
+}
+
+
+/* /left/ */
+.mar-left-1rem {
+    margin-left: 1rem;
+}
+.mar-left-2rem {
+    margin-left: 2rem;
+}
+.mar-left-3rem {
+    margin-left: 3rem;
+}
+.mar-left-4rem {
+    margin-left: 4rem;
+}
+.mar-left-5rem {
+    margin-left: 5rem;
+}
+
+/* /top/ */
+.mar-top-1rem {
+    margin-top: 1rem;
+}
+.mar-top-2rem {
+    margin-top: 2rem;
+}
+.mar-top-3rem {
+    margin-top: 3rem;
+}
+.mar-top-4rem {
+    margin-top: 4rem;
+}
+.mar-top-5rem {
+    margin-top: 5rem;
+}
+
+/* bottom */
+.mar-bottom-1rem {
+    margin-bottom: 1rem;
+}
+.mar-bottom-2rem {
+    margin-bottom: 2rem;
+}
+.mar-bottom-3rem {
+    margin-bottom: 3rem;
+}
+.mar-bottom-4rem {
+    margin-bottom: 4rem;
+}
+.mar-bottom-5rem {
+    margin-bottom: 5rem;
+}
+
+/* /right/ */
+.mar-right-1rem {
+    margin-right: 1rem;
+}
+.mar-right-2rem {
+    margin-right: 2rem;
+}
+.mar-right-3rem {
+    margin-right: 3rem;
+}
+.mar-right-4rem {
+    margin-right: 4rem;
+}
+.mar-right-5rem {
+    margin-right: 5rem;
+}
+
