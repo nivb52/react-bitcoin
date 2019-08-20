@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import UtillService from '../services/UtillService'
+import '../css/header.css';
  
 export default class Header extends Component {
     render() {
-const month = new Date().getMonth()
-const monthName = UtillService.getMonthByName(month)
+    const month = new Date().getMonth()
+    const monthName = UtillService.getMonthByName(month)
+    
         return (
 
             <header 
