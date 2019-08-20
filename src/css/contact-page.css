@@ -32,14 +32,14 @@
 
 }
 
-.contact-name {
+.contact-name, .contact-phone {
     margin: auto;
     margin-left: inherit;
 }
 .contact-mail {
     overflow: hidden;
     word-break: break-word;
-    font-size: calc(10px+4vmin)
+    font-size: calc(10px+0.5vmin)
 }
 
 .add-user-pos {
@@ -52,7 +52,7 @@
     font-size: 2rem;
     width: calc(30px + 4vmin);
     height: calc(30px + 4vmin);
-    border-radius: calc(40px + 0vmin);
+    border-radius: 40px;
 
     background-color: rgba(220,20,60,0.9);
     /* background-color: #f68e06; */
