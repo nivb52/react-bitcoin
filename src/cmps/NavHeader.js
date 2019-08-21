@@ -27,7 +27,7 @@ export default function NavHeader() {
                 <NavLink className="prim-color hover-white" to="/todos">Todos</NavLink>
             </div>
 
-            <hr />
+            <hr className="bcg-grey" />
 
             <AppHeader />
 

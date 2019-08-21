@@ -13,13 +13,22 @@
 }
 
 .text-white {
-    color: white
+    color: white;
 }
 .text-grey {
-    color: grey
+    color: grey;
 }
 .text-black {
-    color: black
+    color: black;
+}
+.bcg-white {
+    background-color: white;
+}
+.bcg-grey {
+    background-color: grey
+}
+.bcg-black {
+    background-color: black
 }
 
 
