@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/react-bitcoin/static/css/main.4d357170.chunk.css",
-    "main.js": "/react-bitcoin/static/js/main.da5d3ff0.chunk.js",
-    "main.js.map": "/react-bitcoin/static/js/main.da5d3ff0.chunk.js.map",
+    "main.css": "/react-bitcoin/static/css/main.ddafd9d6.chunk.css",
+    "main.js": "/react-bitcoin/static/js/main.9dc79683.chunk.js",
+    "main.js.map": "/react-bitcoin/static/js/main.9dc79683.chunk.js.map",
     "runtime~main.js": "/react-bitcoin/static/js/runtime~main.7df476b6.js",
     "runtime~main.js.map": "/react-bitcoin/static/js/runtime~main.7df476b6.js.map",
-    "static/js/2.d89e069c.chunk.js": "/react-bitcoin/static/js/2.d89e069c.chunk.js",
-    "static/js/2.d89e069c.chunk.js.map": "/react-bitcoin/static/js/2.d89e069c.chunk.js.map",
+    "static/js/2.f22241dc.chunk.js": "/react-bitcoin/static/js/2.f22241dc.chunk.js",
+    "static/js/2.f22241dc.chunk.js.map": "/react-bitcoin/static/js/2.f22241dc.chunk.js.map",
     "index.html": "/react-bitcoin/index.html",
-    "precache-manifest.0a979ad639cb880f8b92452026ffbdfa.js": "/react-bitcoin/precache-manifest.0a979ad639cb880f8b92452026ffbdfa.js",
+    "precache-manifest.1a79a0c3cf8e5139a21b9e061816449e.js": "/react-bitcoin/precache-manifest.1a79a0c3cf8e5139a21b9e061816449e.js",
     "service-worker.js": "/react-bitcoin/service-worker.js",
-    "static/css/main.4d357170.chunk.css.map": "/react-bitcoin/static/css/main.4d357170.chunk.css.map",
-    "static/media/user.894a52b8.svg": "/react-bitcoin/static/media/user.894a52b8.svg"
+    "static/css/main.ddafd9d6.chunk.css.map": "/react-bitcoin/static/css/main.ddafd9d6.chunk.css.map",
+    "static/media/logo.1e3ba78e.svg": "/react-bitcoin/static/media/logo.1e3ba78e.svg",
+    "static/media/user.ebd4baa5.svg": "/react-bitcoin/static/media/user.ebd4baa5.svg"
   }
 }
