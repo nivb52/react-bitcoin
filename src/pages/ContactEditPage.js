@@ -7,7 +7,7 @@ export default class ContactEditPage extends React.Component {
     async componentDidMount() {
         const { contactId } = this.props.match.params
         const contact = await ContactService.getContactById(contactId)
-        console.log(contact);
+        // console.log(contact);
         this.setState({ contact })
     }
 
