@@ -1,13 +1,13 @@
 /*
-Props: onFilter
-Allows free text search by name / phone and calls onFilter() 
-on every keypress (onChange),passing a filter object e.g. : {term: 'puk'}
+Props: onFilter Allows free text search by name / phone
+and calls onFilter()  passing a filter object e.g. : {term: 'puk'}
 */
+
 import React from 'react'
 // import './contact-filter.css';
 
 export default class ContactFilter extends React.Component {
-    handleChange(el) {
+    onFilter(el) {
         console.log(el.target.value);
         // this.props.filterBy.term = el.target.value
         // this.setState({ filterBy: {term: el.target.value} });
@@ -26,27 +26,27 @@ export default class ContactFilter extends React.Component {
                 <div className="text-grey">
                     {
                         <input className="input-box"
-                            onChange={this.handleChange}
+                            onChange={this.onFilter}
                         />
                     }
-                    <div className="inline  mar-left-1rem  ">
+                    <div className="inline mar-left-1rem  ">
                         Sort By:
                     </div>
 
                     <button onClick={this.handleSort} data-sort="name"
-                        className="inline  transparent text-grey mar-left-1rem  mar-top-1rem pointer">
-                            Name
+                        className="inline transparent text-grey mar-left-1rem mar-top-1rem pointer">
+                        Name
                     </button>
-                    <span>&nbsp;/</span>
-                <button onClick={this.handleSort} data-sort="email"
-                        className="inline  transparent text-grey mar-left-1rem  mar-top-1rem pointer">
+                    <span>&nbsp;&nbsp;/</span>
+                    <button onClick={this.handleSort} data-sort="email"
+                        className="inline transparent text-grey mar-left-1rem mar-top-1rem pointer">
                         Email
-                        </button>
+                    </button>
                 </div>
             </section>
         )
     }
-    
+
 
 
 
