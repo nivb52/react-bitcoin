@@ -4,7 +4,7 @@ export default {
 }
 
 function getMonthByName(monthNumber) {
-    const months = new Array();
+    const months = [];
     months[0] = "January";
     months[1] = "February";
     months[2] = "March";
