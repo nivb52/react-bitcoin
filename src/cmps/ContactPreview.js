@@ -15,7 +15,8 @@ class ContactPreview extends React.Component {
         const { contact } = this.props;
 
         return (
-            <section className="contact-user flex flex-row mar-auto " onClick={this.handleClick}>
+            <section className="contact-user flex flex-row mar-auto " 
+                onClick={this.handleClick}>
                 <div className="contact-img mar-left-1rem">
                     <img alt={contact.name} 
                         src={`https://robohash.org/${contact.name}.png`}></img>
