@@ -16,10 +16,13 @@ class ContactList extends React.Component {
                 <div className="add-user-pos">
                     <button 
                         className="add-user prim-bcg" 
-                        onClick={this.handleNew}>&#43;
+                        onClick={this.handleNew}
+                        >
+                            &#43;
                     </button>
                 </div>
-                {this.props.contacts.map(currContact =>
+                { this.props.contacts &&
+                    this.props.contacts.map(currContact =>
                     <ContactPreview contact={currContact}
                         key={currContact._id} >
 
