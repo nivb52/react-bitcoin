@@ -32,7 +32,8 @@ export default class ContactDetailPage extends React.Component {
 
             // SHOW CONTACT
             <section>
-                <div className="container width-80">
+                <div className="flex align-center justify-center">
+
                     <button className="btn btn--small btn-center-press transparent"
                         onClick={this.props.history.goBack}>
                         back
@@ -40,7 +41,7 @@ export default class ContactDetailPage extends React.Component {
                 </div>
                 {
                     contact &&
-                    <div className="flex justify-center align-center">
+                    <div className="flex justify-center align-center mar-top-2rem">
 
 
                         <h3 className="subtitle text-white marginless">  {contact.name} </h3>

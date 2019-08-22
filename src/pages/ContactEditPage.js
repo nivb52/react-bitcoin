@@ -29,15 +29,16 @@ export default class ContactEditPage extends React.Component {
     render() {
         const { contact } = this.state || false
         return (
-            <section className="container width-80" >
-
-                    <button className="btn btn--small btn-center-press transparent"
+            <section className="container" >
+                <div className="flex align-center justify-center">
+                    <button className=" btn btn--small btn-center-press transparent"
                         onClick={this.props.history.goBack}>
                         back
                     </button>
+                </div>
 
                 {contact &&
-                    <div>
+                    <div className="container width-80 mar-top-2rem" >
 
                         <h1 className="subtitle is-3 text-center text-white"> Edit Contact</h1>
 
