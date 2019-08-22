@@ -5,6 +5,7 @@
 @import 'paddings.css';
 @import 'texts.css';
 @import 'forms.css';
+@import 'buttons.css';
 @import 'animations.css';
 /* @import 'contact-page.css'; */
 
@@ -58,6 +59,9 @@ body {
   background-color: #dc143ce6;
 }
  
+.transparent {
+  background-color: transparent;
+}
 
 
 
