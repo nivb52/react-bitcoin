@@ -9,25 +9,43 @@ import SignupPage from '../pages/SignupPage'
 import ContactPage from '../pages/ContactPage'
 import ContactDetailPage from '../pages/ContactDetailPage'
 import ContactEditPage from '../pages/ContactEditPage'
+import '../css/hamburger.css';
 
 
 export default function NavHeader() {
 
-    return (
-        <Router >
-            <div className="mar-top-1rem mar-right-1rem text-end ">
-                <NavLink className="prim-color hover-white" to="/">Home</NavLink>
-                <span> &nbsp; | &nbsp; </span>
-                <NavLink className="prim-color hover-white" to="/contacts">Contacts</NavLink>
-                <span> &nbsp; | &nbsp; </span>
-                <NavLink className="prim-color hover-white" to="/charts">Charts</NavLink>
-                <span> &nbsp; | &nbsp; </span>
-                <NavLink className="prim-color hover-white" to="/signup">Signup</NavLink>
-                <span> &nbsp; | &nbsp; </span>
-                <NavLink className="prim-color hover-white" to="/todos">Todos</NavLink>
-            </div>
 
-            <hr className="bcg-grey" />
+    return (
+
+        <Router >
+            <nav role="navigation">
+                <div id="menuToggle">
+                    <input type="checkbox"
+                        id="menuToggleCheckbox"
+                    />
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+
+                    <ul id="menu"
+                        onClick={() => {
+                            // CLOSE MENU
+                            const elMenuToggle = document.querySelector('#menuToggle');
+                            elMenuToggle.children[0].checked = false;
+                        }}
+                    >
+                        <NavLink className="prim-color hover-white" to="/"><li>Home</li></NavLink>
+                        <NavLink className="prim-color hover-white" to="/contacts"><li>Contacts</li></NavLink>
+                        <NavLink className="prim-color hover-white" to="/charts"><li>Charts</li></NavLink>
+                        <NavLink className="prim-color hover-white" to="/signup"><li>Signup</li></NavLink>
+                        <NavLink className="prim-color hover-white" to="/todos"><li>Todos</li></NavLink>
+                    </ul>
+                </div>
+            </nav>
+
+
 
             <AppHeader />
 
