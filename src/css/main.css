@@ -30,7 +30,17 @@ body {
     color: white;
   }
   
-
+  a
+  {
+    text-decoration: none;  
+    transition: color 0.3s ease;
+  }
+  
+  a:hover
+  {
+    color: #ebb811;
+  }
+  
 
 .prim-color {
     color:#ebb811;
@@ -48,3 +58,6 @@ body {
   background-color: #dc143ce6;
 }
  
+
+
+
