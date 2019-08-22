@@ -21,8 +21,6 @@ export default class StatisticPage extends Component {
 
     }
 
-    // const mappedToArray =  values.map(v => Array.from(Object.values(v)))
-
     render() {
         const {status, marketPriceData } = this.state
         const isData = status === "ok" ? true : false
