@@ -15,3 +15,12 @@
 .hover-black:hover {
     color: #000;
 }
+
+/* BORDER */
+
+.border-half-white-2px {
+	border: 1px solid rgba(255, 255, 255, 0.5);
+ } 
+ .border-white-2px {
+ 	border: 2px solid #FFF;
+ }
