@@ -14,6 +14,10 @@ import '../css/hamburger.css';
 
 export default function NavHeader() {
 
+const closeMenu = () => {
+    const elMenuToggle = document.querySelector('#menuToggle');
+    elMenuToggle.children[0].checked = false;
+}
 
     return (
 
@@ -30,11 +34,7 @@ export default function NavHeader() {
 
 
                     <ul id="menu"
-                        onClick={() => {
-                            // CLOSE MENU
-                            const elMenuToggle = document.querySelector('#menuToggle');
-                            elMenuToggle.children[0].checked = false;
-                        }}
+                        onClick={closeMenu}
                     >
                         <NavLink className="prim-color hover-white" to="/"><li>Home</li></NavLink>
                         <NavLink className="prim-color hover-white" to="/contacts"><li>Contacts</li></NavLink>
