@@ -54,19 +54,24 @@ export default class ContactEditPage extends React.Component {
                     <form className="flex justify-evenly mar-1rem" onSubmit={this.handleSubmit}>
 
                         <input name="name"
+                        placeholder="name"
+                        type="text" maxLength="50" minLength="3"
+
                             className="input-box mar-1rem"
-                            type="text" maxLength="50" minLength="3"
                             onChange={this.handleChange}
                             value={(contact && contact.name) ? contact.name : ''}
                         />
 
                         <input name="email" type="email"
+                        placeholder="email"
                             className="input-box mar-1rem"
                             onChange={this.handleChange}
                             value={(contact && contact.email) ? contact.email : ''}
                         />
 
                         <input name="phone" type="phone"
+                        placeholder="phone 000-000-0000"
+
                             className="input-box mar-1rem"
                             onChange={this.handleChange}
                             value={(contact && contact.phone) ? contact.phone : ''}

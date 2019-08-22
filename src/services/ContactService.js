@@ -126,47 +126,53 @@ const contacts = [
   }
 ];
 
-function sort(arr) {
-  return arr.sort((a, b) => {
-    if (a.name.toLocaleLowerCase() < b.name.toLocaleLowerCase()) {
-      return -1;
-    }
-    if (a.name.toLocaleLowerCase() > b.name.toLocaleLowerCase()) {
-      return 1;
-    }
-
-    return 0;
-  })
-}
-
-async function getContacts(filterBy = null) {
+async function getContacts(filterBy = {}) {
   try {
-    var contactsToReturn = await contacts
-    if (filterBy && filterBy.term) {
-      contactsToReturn = filter(filterBy.term)
-    }
-  
-    return sort(contactsToReturn)
+    const contactsToReturn = await _filter(contacts, filterBy.term)
 
+
+    const sortTerm = filterBy.sortTerm 
+    const isAscending = filterBy.isAscending 
+
+    const sortedContacts = await _sort(contactsToReturn, sortTerm, isAscending)
+    return sortedContacts
   } catch (err) {
-    console.log('had problems');
+    console.log(err, 'HAD SOME PROBLEMS');
   }
 }
 
+function _filter(contacts, term) {
+  term = term.toLocaleLowerCase()
+  return contacts.filter(contact => {
+    return contact.name.toLocaleLowerCase().includes(term) ||
+      contact.phone.toLocaleLowerCase().includes(term) ||
+      contact.email.toLocaleLowerCase().includes(term)
+  })
+}
+
+function _sort(arr, sortTerm = 'name', isAsc = true) {
+  sortTerm = sortTerm.toLocaleLowerCase()
+
+  const sorted = arr.sort((a, b) => {
+    if (a[sortTerm].toLocaleLowerCase() < b[sortTerm].toLocaleLowerCase()) {
+      return isAsc ? -1 : 1;
+    } else if (a[sortTerm].toLocaleLowerCase() > b[sortTerm].toLocaleLowerCase()) {
+      return isAsc ? 1 : -1;
+    } else return 0;
+  })
+  // console.log(sorted);
+  return sorted
+}
 
 async function getContactById(id) {
   try {
     const contact = await contacts.find(contact => contact._id === id);
-    if (contact)  return (contact) 
-    else return(false) //`Contact id ${id} not found!`
+    if (contact) return (contact)
+    else return (false) //`Contact id ${id} not found!`
 
-  } catch(err) {
-    console.log(err,'HAD SOME PROBLEMS');
+  } catch (err) {
+    console.log(err, 'HAD SOME PROBLEMS');
   }
-  // return new Promise((resolve, reject) => {
-  //   const contact = contacts.find(contact => contact._id === id)
-  //   contact ? resolve(contact) : reject(`Contact id ${id} not found!`)
-  // })
 }
 
 function deleteContact(id) {
@@ -178,6 +184,18 @@ function deleteContact(id) {
 
     resolve(contacts)
   })
+}
+
+function saveContact(contact) {
+  return contact._id ? _updateContact(contact) : _addContact(contact)
+}
+
+function getEmptyContact() {
+  return {
+    name: '',
+    email: '',
+    phone: ''
+  }
 }
 
 function _updateContact(contact) {
@@ -195,27 +213,6 @@ function _addContact(contact) {
     contact._id = _makeId()
     contacts.push(contact)
     resolve(contact)
-  })
-}
-
-function saveContact(contact) {
-  return contact._id ? _updateContact(contact) : _addContact(contact)
-}
-
-function getEmptyContact() {
-  return {
-    name: '',
-    email: '',
-    phone: ''
-  }
-}
-
-function filter(term) {
-  term = term.toLocaleLowerCase()
-  return contacts.filter(contact => {
-    return contact.name.toLocaleLowerCase().includes(term) ||
-      contact.phone.toLocaleLowerCase().includes(term) ||
-      contact.email.toLocaleLowerCase().includes(term)
   })
 }
 
