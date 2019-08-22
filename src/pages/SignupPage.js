@@ -2,9 +2,9 @@
 
 import React, { Component } from 'react';
 import UserService from '../services/UserService';
-// import UserIcon from '../assets/user.svg';
-import { UserIcon } from '../cmps/icons/UserIcon.js';
+import LogoContainer from '../cmps/LogoContainer' 
 
+import { UserIcon } from '../cmps/icons/UserIcon.js';
 class SignupPage extends Component {
     constructor() {
         super()
@@ -28,6 +28,9 @@ class SignupPage extends Component {
         return (
 
             <section className="container">
+              
+                <LogoContainer/>
+              
                 <form onSubmit={this.handleSubmit}>
 
                     <div className="flex flex-nowarp mar-1rem align-center justify-center">
