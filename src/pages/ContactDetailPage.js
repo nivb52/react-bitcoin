@@ -32,10 +32,17 @@ export default class ContactDetailPage extends React.Component {
 
             // SHOW CONTACT
             <section>
+                <div className="container width-80">
+                    <button className="btn btn--small btn-center-press transparent"
+                        onClick={this.props.history.goBack}>
+                        back
+                        </button>
+                </div>
                 {
                     contact &&
                     <div className="flex justify-center align-center">
-                        <button className="mar-1rem pad-halfrem" onClick={this.props.history.goBack}> back  </button>
+
+
                         <h3 className="subtitle text-white marginless">  {contact.name} </h3>
                         <img alt={contact.name} width="50vmin"
                             src={`https://robohash.org/${contact.name}.png`}></img>
@@ -47,9 +54,9 @@ export default class ContactDetailPage extends React.Component {
 
                 }
 
-                <div className="flex-row justify-evenly mar-2rem">
-                <button className="pad-halfrem" onClick={this.handleEdit}> Edit </button>
-                <button className="pad-halfrem" onClick={this.deleteContact}>Delete</button>
+                <div className="flex-row justify-evenly mar-top-3rem">
+                    <button className="btn btn-center-press transparent" onClick={this.handleEdit}> Edit </button>
+                    <button className="btn btn-spinner mar-left-2rem transparent" onClick={this.deleteContact}>Delete</button>
                 </div>
 
                 {

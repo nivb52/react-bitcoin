@@ -29,20 +29,23 @@ export default class ContactEditPage extends React.Component {
     render() {
         const { contact } = this.state || false
         return (
-            <section >
-                <button className="mar-1rem pad-halfrem"
-                    onClick={this.props.history.goBack}> back  </button>
+            <section className="container width-80" >
+
+                    <button className="btn btn--small btn-center-press transparent"
+                        onClick={this.props.history.goBack}>
+                        back
+                    </button>
 
                 {contact &&
                     <div>
 
-                        <h1 className="title is-2"> Edit Contact</h1>
+                        <h1 className="subtitle is-3 text-center text-white"> Edit Contact</h1>
 
                     </div>
                 }
                 {!contact &&
                     <div>
-                        <h1> Add New Contact</h1>
+                        <h1 className="subtitle is-3 text-center text-white"> Add New Contact</h1>
                     </div>
                 }
                 <div className="container width-80">
@@ -69,7 +72,7 @@ export default class ContactEditPage extends React.Component {
 
                         />
 
-                        <button className="pad-1rem prim-bcg">Save</button>
+                        <button className="pad-1rem prim-bcg white-text">Save</button>
 
                     </form>
                 </div>
