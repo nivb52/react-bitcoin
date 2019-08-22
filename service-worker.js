@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/react-bitcoin/precache-manifest.f5c3020e8432055803818bbfa57f838b.js"
+  "/react-bitcoin/precache-manifest.71545d3662878969c402704cfea68c73.js"
 );
 
 self.addEventListener('message', (event) => {
