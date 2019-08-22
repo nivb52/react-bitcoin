@@ -29,10 +29,12 @@ export default class TodoPage extends React.Component {
 
     handleDoneTodo = (e) => {
         const isDone = e.target.checked ? true : false
+        const todos = this.state.todos
         // MAKE IT EASIER TO READ WITH IDX
         const idx = this.state.currTodoId
-        if (this.state.todos[idx]) this.state.todos[idx].isDone = isDone
+        if (this.state.todos[idx]) todos[idx].isDone = isDone
         this.setState({ todoDetails: { ...this.state.todoDetails, isDone: isDone } });
+        this.setState({ todos });
 
     }
 
@@ -47,14 +49,17 @@ export default class TodoPage extends React.Component {
 
 
 
-                        <ol>
-                            {this.state.todos.map((item, idx) =>
-                                <li className="is-medium mar-top-halfrem" onClick={() => this.handleShow(idx)}
-                                    key={idx}>{item.txt}</li>)}
-                        </ol>
+                    <ol>
+                        {this.state.todos.map((item, idx) =>
+                            <li className="is-medium mar-top-halfrem pointer"
+                                onClick={() => this.handleShow(idx)}
+                                key={idx}>{item.txt}
+                            </li>)
+                        }
+                    </ol>
 
-                        <button className="button prim-bcg is-medium mar-top-3rem text-black"
-                            onClick={this.handleAdd}>Add
+                    <button className="button prim-bcg is-medium mar-top-3rem text-black"
+                        onClick={this.handleAdd}>Add
                         </button>
 
                     <div className="mar-top-3rem">
@@ -80,8 +85,8 @@ export default class TodoPage extends React.Component {
                                 <div className="mar-top-1rem">
 
                                     <input type="checkbox"
-                                    
-                                    onChange={this.handleDoneTodo}
+
+                                        onChange={this.handleDoneTodo}
                                         checked={this.state.todoDetails.isDone} />
                                     <span> is done</span>
                                 </div>
