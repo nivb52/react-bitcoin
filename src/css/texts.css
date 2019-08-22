@@ -13,22 +13,23 @@
 }
 
 .text-white {
-    color: white;
+    color: white !important;
 }
 .text-grey {
-    color: grey;
+    color: grey !important;
 }
 .text-black {
-    color: black;
+    color: black !important;
 }
+
 .bcg-white {
-    background-color: white;
+    background-color: white !important;
 }
 .bcg-grey {
-    background-color: grey
+    background-color: grey !important;
 }
 .bcg-black {
-    background-color: black
+    background-color: black !important;
 }
 
 
@@ -44,6 +45,12 @@
 .is-4 {
     font-size: 1.8rem;
 }
+.is-medium {
+    font-size: 1.25rem;
+}
+.is-small {
+    font-size: 0.7rem;
+}
 
 .title {
     font-size: 2rem;
@@ -54,3 +61,5 @@
 .subtitle, .title {
     word-break: break-word;
 }
+
+
