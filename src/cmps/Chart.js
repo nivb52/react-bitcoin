@@ -8,16 +8,18 @@ export default class Chart extends Component {
         let { name, description, period, points } = this.props.data
         let color = this.props.color || 'black'
         return (
-            <div className="chart test">
-                <p> {name} - for a {period} </p>
+            <div>
+                <h2 className="subtitle is-4 text-center text-white">
+                    {name} - for a {period}
+                </h2>
                 <p> {description} </p>
 
-                <Sparklines data={points} 
+                <Sparklines data={points}
                 >
-                    <SparklinesLine color={color} 
-                    style={{ strokeWidth: 1 , fillOpacity: .05}}
+                    <SparklinesLine color={color}
+                        style={{ strokeWidth: 1, fillOpacity: .05 }}
                     />
-                    <SparklinesSpots  style={{ fill: "white" }} />
+                    <SparklinesSpots style={{ fill: "white" }} />
                 </Sparklines>
             </div>
         )

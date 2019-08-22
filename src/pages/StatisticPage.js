@@ -29,12 +29,12 @@ export default class StatisticPage extends Component {
 
 
         return (
-            <section>
+            <section className="container width-80 mar-top-3rem">
 
-                <h1> Charts</h1>
+                <h1 className="title is-3 text-center text-white">Bitcoin Charts</h1>
                 {
                     !isData &&
-                    <div>Loading Data</div>
+                    <div>Loading Data...</div>
                 }
                 {
                     isData &&
