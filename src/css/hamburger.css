@@ -25,6 +25,39 @@
   z-index: 2; /* and place it over the hamburger */
 }
 
+/* MENU li>a COLORS */
+#menuToggle input:checked ~ span
+{
+  /* WHITE OPTION */
+  /* background: #232323; */
+}
+#menu {
+  background: #252525;
+}
+
+/* absolute positioned at the top left of the screen */
+#menu
+{
+  position: absolute;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  list-style-type: none;
+  height: 100vh;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+
 /* hamburger */
 #menuToggle span
 {
@@ -44,18 +77,7 @@
               opacity 0.55s ease;
 }
 
-/* COLORS */
-#menuToggle input:checked ~ span
-{
-  /* WHITE OPTION*/
-  /* background: #232323; */
-}
-#menu {
-  /* WHITE OPTION*/
-  /* background: #ededed; */
 
-  background: #252525;
-}
 
 
 
@@ -91,26 +113,6 @@
   transform: rotate(-45deg) translate(0, -1px);
 }
 
-/* absolute positioned at the top left of the screen */
-#menu
-{
-  position: absolute;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-  list-style-type: none;
-  /* to stop flickering of text in safari */
-  
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-#menu li
-{
-  padding: 10px 0;
-  font-size: 22px;
-}
 
 /*
  * And let's slide it in from the left
