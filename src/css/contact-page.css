@@ -9,7 +9,6 @@
     cursor: pointer;
     color: #c8c8c8;
      
-    justify-content: space-around;
     width: 100vw;
 
     max-width: 500px;
@@ -34,9 +33,15 @@
 
 }
 
-.contact-name, .contact-phone {
+.contact-name {
+    width: 40%;
+    margin-left: 1rem;
+}
+
+.contact-phone {
     margin: auto;
     margin-left: inherit;
+    
 }
 .contact-mail {
     overflow: hidden;
