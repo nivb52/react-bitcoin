@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import {Logo} from './icons/LogoIcon.js'
-import '../css/logo-container.css';
+import '../css/header.css';
 
 export default class LogoContainer extends Component {
     render() {
 
         return (
-                <div className="logo-img">
+
+                <div className="flex justify-center 
+                                 align-center">
                     <Logo/>
                 </div>
                 )
