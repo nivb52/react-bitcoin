@@ -15,6 +15,9 @@
 .text-white {
     color: white !important;
 }
+.text-grey-light {
+    color: #ccc !important;
+}
 .text-grey {
     color: grey !important;
 }
