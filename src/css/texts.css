@@ -45,25 +45,26 @@
 
 
 .is-1 {
-    font-size: 3.5rem;
+    font-size: 3.5rem !important;
 }
 .is-2 {
-    font-size: 2.5rem;
+    font-size: 2.5rem !important;
 }
 .is-3 {
-    font-size: 2rem;
+    font-size: 2rem !important;
 }
 .is-4 {
-    font-size: 1.8rem;
+    font-size: 1.8rem !important;
 }
 .is-medium {
-    font-size: 1.25rem;
+    font-size: 1.25rem !important;
 }
 .is-small {
-    font-size: 0.7rem;
+    font-size: 0.7rem !important;
 }
 
 .title {
+    /* font-family: Arial, Helvetica, sans-serif; */
     font-size: 2rem;
     font-weight: 600;
     line-height: 1.125;
