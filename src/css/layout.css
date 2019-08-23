@@ -48,19 +48,37 @@ align-items: center;
 .width-80 {
     width: 80%;
 }
-.width-50 {
+.width-50, .witdh-half {
     width: 50%;
 }
 
-.width-33 {
+.width-33, .width-third {
     width: 33%;
 }
-.width-25 {
+.width-25, .witdh-quarter {
     width: 25%;
+}
+.width-20,.width-fifth {
+    width: 120%;
 }
 .width-10 {
     width: 10%;
 }
 
+.width-50vmin {
+    width:50vmin;
+}
+.width-33vmin {
+    width:33vmin;
+}
+.width-25vmin {
+    width:25vmin;
+}
+.width-20vmin {
+    width:20vmin;
+}
+.width-10vmin {
+    width:10vmin;
+}
 
 
