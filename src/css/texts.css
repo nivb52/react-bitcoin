@@ -2,7 +2,7 @@
 /* TEXT */
  /* ==================== */
 
- .text-start{
+.text-start{
     text-align: start;
 }
 .text-end{
@@ -23,6 +23,14 @@
 }
 .text-black {
     color: black !important;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.line-through, .done {
+    text-decoration: line-through;
 }
 
 .bcg-white {
