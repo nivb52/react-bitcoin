@@ -43,10 +43,10 @@ export default function NavHeader() {
                         onClick={closeMenu}
                     >
                         {
-                        menuRoutes.map( link => 
+                        menuRoutes.map( (link, index) => 
                         <NavLink 
                         className="prim-color hover-white" 
-                        to={link.path}>
+                        to={link.path} key={index}>
                                 <li>{link.text}</li>
                         </NavLink>
                         )
