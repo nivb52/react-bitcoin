@@ -45,7 +45,7 @@ export default class ContactEditPage extends React.Component {
                     </div>
                 }
                 {!contact &&
-                    <div>
+                    <div className="mar-top-3rem">
                         <h1 className="subtitle is-3 text-center text-white"> Add New Contact</h1>
                     </div>
                 }
