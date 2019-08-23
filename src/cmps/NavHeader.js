@@ -14,11 +14,18 @@ import '../css/hamburger.css';
 
 export default function NavHeader() {
 
-const closeMenu = () => {
-    const elMenuToggle = document.querySelector('#menuToggle');
-    elMenuToggle.children[0].checked = false;
-}
+    const closeMenu = () => {
+        const elMenuToggle = document.querySelector('#menuToggle');
+        elMenuToggle.children[0].checked = false;
+    }
 
+    const menuRoutes = [
+                        {path:'/' , text: 'home'},
+                        {path:'/contacts' , text: 'contacts'},
+                        {path:'/charts' , text: 'charts'},
+                        {path:'/signup' , text: 'signup'},
+                        {path:'/todos' , text: 'todos'},
+                        ]
     return (
 
         <Router >
@@ -32,15 +39,19 @@ const closeMenu = () => {
                     <span></span>
                     <span></span>
 
-
                     <ul id="menu"
                         onClick={closeMenu}
                     >
-                        <NavLink className="prim-color hover-white" to="/"><li>Home</li></NavLink>
-                        <NavLink className="prim-color hover-white" to="/contacts"><li>Contacts</li></NavLink>
-                        <NavLink className="prim-color hover-white" to="/charts"><li>Charts</li></NavLink>
-                        <NavLink className="prim-color hover-white" to="/signup"><li>Signup</li></NavLink>
-                        <NavLink className="prim-color hover-white" to="/todos"><li>Todos</li></NavLink>
+                        {
+                        menuRoutes.map( link => 
+                        <NavLink 
+                        className="prim-color hover-white" 
+                        to={link.path}>
+                                <li>{link.text}</li>
+                        </NavLink>
+                        )
+                        }
+                        
                     </ul>
                 </div>
             </nav>
@@ -57,6 +68,7 @@ const closeMenu = () => {
                 <Route path="/contacts" component={ContactPage} />
                 <Route path="/contact/edit/:contactId?" component={ContactEditPage} />
                 <Route path="/contact/:contactId" component={ContactDetailPage} />
+                {/* <Route path="/404" component={NotFoundPage} /> */}
             </Switch>
 
 
