@@ -1,0 +1,20 @@
+
+.prim-color {
+    color:#ebb811;
+}
+
+.prim-bcg {
+    background-color: #ebb811;
+}
+
+.scnd-color {
+  color:#dc143ce6;
+}
+
+.scnd-bcg {
+  background-color: #dc143ce6;
+}
+ 
+.transparent {
+  background-color: transparent;
+}

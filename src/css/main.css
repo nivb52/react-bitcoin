@@ -6,6 +6,7 @@
 @import 'texts.css';
 @import 'forms.css';
 @import 'buttons.css';
+@import 'colors.css';
 @import 'animations.css';
 /* @import 'contact-page.css'; */
 
@@ -19,18 +20,10 @@ body {
     margin: 0 auto;
     min-height: 100vh
 }
-  
-  .App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(1rem + 0.5vmin);
-    color: white;
-  }
-  
+img {
+  width: 100%;
+}
+
   a
   {
     text-decoration: none;  
@@ -43,25 +36,18 @@ body {
   }
   
 
-.prim-color {
-    color:#ebb811;
-}
 
-.prim-bcg {
-    background-color: #ebb811;
-}
 
-.scnd-color {
-  color:#dc143ce6;
-}
 
-.scnd-bcg {
-  background-color: #dc143ce6;
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(1rem + 0.5vmin);
+  color: white;
 }
- 
-.transparent {
-  background-color: transparent;
-}
-
 
 
