@@ -65,10 +65,13 @@
     color: white;
 }
 
-@media (max-width: 508px) {
-
+@media (max-width: 375px) {
+    .contact-mail {
+        font-size: 0.8rem
+    }
     .contact-phone{
-        display: none;
+        /* display: none; */
+        font-size: 0.8rem;
     }
 
 }
