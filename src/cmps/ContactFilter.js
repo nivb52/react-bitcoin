@@ -32,7 +32,7 @@ export default class ContactFilter extends React.Component {
         return (
 
             <section className="flex flex-row justify-center">
-                <div className="text-grey">
+                <div className="text-grey-light">
                     {
                         <input className="input-box"
                             type="text"
@@ -45,14 +45,14 @@ export default class ContactFilter extends React.Component {
                     </div>
 
                     <button onClick={this.handleSort}
-                        className="inline transparent text-grey mar-left-1rem mar-top-1rem pointer">
+                        className="inline transparent text-grey-light mar-left-1rem mar-top-1rem pointer">
                         Name
                     </button>
 
                     <span>&nbsp;&nbsp;/</span>
 
                     <button onClick={this.handleSort}
-                        className="inline transparent text-grey mar-left-1rem mar-top-1rem pointer">
+                        className="inline transparent text-grey-light mar-left-1rem mar-top-1rem pointer">
                         Email
                     </button>
                 </div>
