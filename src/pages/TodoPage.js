@@ -1,7 +1,7 @@
 
 import React from 'react';
 import '../css/todo.css'
-// import ContactService from '../services/ContactService'
+import UtillService from '../services/UtillService'
 
 export default class TodoPage extends React.Component {
     state = {
@@ -41,6 +41,7 @@ export default class TodoPage extends React.Component {
 
 
     render() {
+
         return (
             <section className="mar-left-5rem">
 
@@ -70,7 +71,8 @@ export default class TodoPage extends React.Component {
                                     {this.state.todoDetails.txt}
                                     <span className="is-small mar-left-1rem">
                                         {
-                                            this.state.todoDetails.createdAt//.toLocaleDateString()
+                                            UtillService.createDateFromStamp(this.state.todoDetails.createdAt)
+                                            //this.state.todoDetails.createdAt//.toLocaleDateString()
                                         }
                                     </span>
                                 </h2>

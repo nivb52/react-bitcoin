@@ -1,6 +1,7 @@
 
 export default {
-    getMonthByName
+    getMonthByName,
+    createDateFromStamp
 }
 
 function getMonthByName(monthNumber) {
@@ -19,4 +20,11 @@ function getMonthByName(monthNumber) {
     months[11] = "December";
 
     return months[monthNumber]
+}
+
+
+function createDateFromStamp(stp){
+    var userLang = window.navigator.language || 'en-US'
+    var dateFormat = new Date(stp).toLocaleDateString(userLang);
+    return dateFormat;
 }
