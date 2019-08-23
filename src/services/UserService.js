@@ -1,22 +1,36 @@
+import { storageService } from './StorageService.js'
+import { USER_KEY } from './Keys.js'
 export default {
     getUser,
     signup,
+    logout,
     addMove
 }
-const USERS_DB = []
+// const USER_KEY = 'user';
 
 function signup(name) {    
-    if (!USERS_DB.find(user => user.name === name) ) {
+    const currUser = storageService.load(USER_KEY) || null
+    if (!currUser ) {
         const newUser = {
             _id: _makeId(),
             name,
             coins: 100,
             moves: []
         }
-        USERS_DB.push({ newUser })        
+        // currUser = newUser 
+        storageService.store(USER_KEY, newUser)
         return newUser
     } else {
         return 'cannot choose this name please choose other name'
+    }
+}
+function logout() {    
+    const currUser = storageService.load(USER_KEY) || null
+    if (currUser ) { 
+        storageService.store(USER_KEY, null)
+        return true
+    } else {
+        return 'you are not logged in'
     }
 }
 
