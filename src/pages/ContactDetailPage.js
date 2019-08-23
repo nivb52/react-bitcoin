@@ -45,7 +45,7 @@ export default class ContactDetailPage extends React.Component {
 
 
                         <h3 className="subtitle text-white marginless">  {contact.name} </h3>
-                        <img alt={contact.name} width="50vmin"
+                        <img alt={contact.name} className="width-20vmin"
                             src={`https://robohash.org/${contact.name}.png`}></img>
 
                         <span className="mar-1rem">{contact.email} </span>
