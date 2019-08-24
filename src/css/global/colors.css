@@ -6,6 +6,10 @@
 .prim-bcg {
     background-color: #ebb811;
 }
+.prim-bcg-hover:hover {
+    border: solid 1px #ebb811;
+    background-color: transparent;
+}
 
 .scnd-color {
   color:#dc143ce6;
@@ -17,4 +21,47 @@
  
 .transparent {
   background-color: transparent;
+}
+
+
+/* TEXT COLORS */
+
+
+.text-white {
+  color: white !important;
+}
+.text-white-hover:hover {
+  color: white !important;
+}
+
+.text-grey-light {
+  color: #ccc !important;
+}
+.text-grey {
+  color: grey !important;
+}
+.text-black {
+  color: black !important;
+}
+
+.text-black-light {
+  color: #252525 !important;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.line-through, .done {
+  text-decoration: line-through;
+}
+
+.bcg-white {
+  background-color: white !important;
+}
+.bcg-grey {
+  background-color: grey !important;
+}
+.bcg-black {
+  background-color: black !important;
 }

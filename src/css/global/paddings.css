@@ -8,7 +8,50 @@
 .pad-1rem {
     padding: 1rem;
 }
+.pad-2rem {
+    padding: 2rem;
+}
+.pad-3rem {
+    padding: 3rem;
+}
 
+
+
+
+/* /left/ */
+.pad-left-1rem {
+    padding-left: 1rem;
+}
+.pad-left-2rem {
+    padding-left: 2rem;
+}
+.pad-left-3rem {
+    padding-left: 3rem;
+}
+.pad-left-4rem {
+    padding-left: 4rem;
+}
+.pad-left-5rem {
+    padding-left: 5rem;
+}
+
+
+/* /top/ */
+.pad-top-halfrem {
+    padding-top: 0.5rem;
+}
 .pad-top-1rem {
     padding-top: 1rem;
+}
+.pad-top-2rem {
+    padding-top: 2rem;
+}
+.pad-top-3rem {
+    padding-top: 3rem;
+}
+.pad-top-4rem {
+    padding-top: 4rem;
+}
+.pad-top-5rem {
+    padding-top: 5rem;
 }

@@ -8,39 +8,11 @@
 .text-end{
     text-align: end;
 }
+.text-left{
+    text-align: left;
+}
 .text-center{
     text-align: center;
-}
-
-.text-white {
-    color: white !important;
-}
-.text-grey-light {
-    color: #ccc !important;
-}
-.text-grey {
-    color: grey !important;
-}
-.text-black {
-    color: black !important;
-}
-
-.underline {
-    text-decoration: underline;
-}
-
-.line-through, .done {
-    text-decoration: line-through;
-}
-
-.bcg-white {
-    background-color: white !important;
-}
-.bcg-grey {
-    background-color: grey !important;
-}
-.bcg-black {
-    background-color: black !important;
 }
 
 
@@ -74,4 +46,6 @@
     word-break: break-word;
 }
 
-
+.bold, .bold-700 {
+    font-weight: 700;
+}
