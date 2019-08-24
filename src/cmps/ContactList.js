@@ -12,15 +12,8 @@ class ContactList extends React.Component {
 
     render() {
         return (
-            <section className="contact-center" >
-                <div className="add-user-pos">
-                    <button 
-                        className="add-user prim-bcg" 
-                        onClick={this.handleNew}
-                        >
-                            &#43;
-                    </button>
-                </div>
+            <section className="flex justify-center align-center" >
+                
                 { this.props.contacts &&
                     this.props.contacts.map(currContact =>
                     <ContactPreview contact={currContact}
@@ -30,6 +23,15 @@ class ContactList extends React.Component {
 
                 )
                 }
+                
+                <div className="add-user-pos">
+                    <button 
+                        className="add-user prim-bcg pointer" 
+                        onClick={this.handleNew}
+                        >
+                            &#43;
+                    </button>
+                </div>
             </section>
         )
     }

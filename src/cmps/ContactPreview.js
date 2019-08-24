@@ -13,25 +13,27 @@ class ContactPreview extends React.Component {
     handleImageErrored = () => {
         console.log('error loading image');
       }
+      
     render() {
         const { contact } = this.props;
 
         return (
-            <section className="contact-user flex-row mar-auto "
+            <section className="flex-row contact-user pointer"
                 onClick={this.handleClick}>
-                <div className="contact-img mar-left-1rem">
+
+                <div className="mar-left-1rem contact-img">
                     <img alt={contact.name} data-src='/images/placeholders/48x48.png'
                         src={`https://robohash.org/${contact.name}.png`}
                         onError={this.handleImageErrored}
                         ></img>
                 </div>
-                <div className="contact-name text-start">
+                <div className="contact-name">
                     {contact.name}
                     <div className="contact-mail">
                         {contact.email}
                     </div>
                 </div>
-                <span className="contact-phone"> {contact.phone}  </span>
+                <span className="contact-phone pad-left-2rem"> {contact.phone}  </span>
 
             </section>
         )
