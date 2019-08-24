@@ -19,15 +19,12 @@
 
 
 .align-center {
-align-items: center;
-    
+    align-items: center;
 }
 .justify-center {
     justify-content: center;
-
 }
 .justify-evenly {
-
     justify-content: space-evenly;
 }
 
@@ -42,6 +39,11 @@ align-items: center;
     margin: 0 auto;
     position: relative;
     width: auto;
+}
+
+
+.mar-center {
+    margin: 0 auto;
 }
 
 /* WIDTH */

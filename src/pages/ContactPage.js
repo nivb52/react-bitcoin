@@ -44,7 +44,7 @@ export default class ContactPage extends Component {
 
         return (
             <section >
-                <div className="container">
+                <div className="flex mar-center">
                     <ContactFilter onSort={this.onSort} onFilter={this.onFilter} filterBy={this.state.filterBy}
                     />
                     <ContactList contacts={contacts} />

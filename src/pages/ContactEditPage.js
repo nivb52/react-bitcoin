@@ -79,7 +79,7 @@ export default class ContactEditPage extends React.Component {
 
                         />
 
-                        <button className="pad-1rem prim-bcg white-text">Save</button>
+                        <button className="pad-1rem prim-bcg prim-bcg-hover text-black-light text-white-hover bold">Save</button>
 
                     </form>
                 </div>

@@ -1,57 +1,57 @@
-.contact-center {
-    margin: 20px auto;
+.contact-list {
 }
 
 .mar-contact-user {
     margin: calc(6px + 2vmin);
 }
 .contact-user {
-    cursor: pointer;
     color: #c8c8c8;
-     
     width: 100vw;
-
     max-width: 500px;
     border-bottom: 1px solid rgba(128, 128, 128, 0.15);
     margin-left: inherit;
     padding-top: 1rem;
-
 }
 
 
 
 .contact-img {
-    /* background-image: linear-gradient(to left bottom, #f68e06 , #99460f); */
     background-image: linear-gradient(to left bottom,#ebb811 ,#ffa52f, #f68e06 , rgba(200,0,0,0.7));
-    font-size: 1rem;
-    width: 40px;
-    text-align: center;
     line-height: 40px;
     height: 40px;
+    width: 40px;
     border-radius: 100px;
-
 }
 
 .contact-name {
     width: 40%;
-    margin-left: 1rem;
+    padding-left: 1rem;
+}
+@media (min-width: 478px) {
+    .contact-name{
+       padding-top: 0.3rem; 
+    }
 }
 
 .contact-phone {
-    margin: auto;
-    margin-left: inherit;
-    
+    margin: auto;    
 }
 .contact-mail {
-    overflow: hidden;
+    /* overflow: hidden; */
     word-break: break-word;
     font-size: 0.9rem
 }
 
 .add-user-pos {
     position: fixed;
-    top: 92vh;
-    left: 85vw;
+    top: 90vh;
+    left: 84vw;
+}
+
+@media (min-width: 478px){
+    .add-user-pos{
+        left:86vw;
+    }
 }
 
 .add-user {
@@ -59,9 +59,6 @@
     width: calc(30px + 4vmin);
     height: calc(30px + 4vmin);
     border-radius: 40px;
-
-    cursor: pointer;
-    color: white;
 }
 
 @media (max-width: 375px) {
