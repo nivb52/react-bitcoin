@@ -31,18 +31,18 @@ export default class ContactFilter extends React.Component {
 
         return (
 
-            <section className="flex flex-row justify-center">
+            <section className="flex-row justify-center container width-80">
                 <div className="text-grey-light">
                     {
-                        <input className="input-box"
-                            type="text"
+                        <input className="input-box text-center"
+                            // placeholder="search here"
+                            type="search"
                             onChange={this.setFilter} />
                     }
 
 
-                    <div className="inline mar-left-1rem  ">
+                    <div className="inline pad-left-1rem mar-bottom-2rem ">
                         Sort By:
-                    </div>
 
                     <button onClick={this.handleSort}
                         className="inline transparent text-grey-light mar-left-1rem mar-top-1rem pointer">
@@ -55,6 +55,8 @@ export default class ContactFilter extends React.Component {
                         className="inline transparent text-grey-light mar-left-1rem mar-top-1rem pointer">
                         Email
                     </button>
+                    </div>
+
                 </div>
             </section>
         )

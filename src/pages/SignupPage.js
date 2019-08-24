@@ -7,7 +7,7 @@ import LogoContainer from '../cmps/LogoContainer'
 import { UserIcon } from '../cmps/icons/UserIcon.js';
 class SignupPage extends Component {
 
-    //ONE WAY IN REACT TO USE THIS
+    //ONE WAY IN REACT TO USE 'THIS'
     constructor() {
         super()
         this.state = { value: '' };

@@ -20,6 +20,7 @@ export default class StatisticPage extends Component {
         
 
     }
+    // console.log(navigator.onLine); ==> return true or false
 
     render() {
         const {status, marketPriceData } = this.state
