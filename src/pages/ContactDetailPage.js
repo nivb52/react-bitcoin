@@ -1,6 +1,7 @@
 
 import React from 'react';
 import ContactService from '../services/ContactService'
+import '../css/contact-animation.css';
 
 
 export default class ContactDetailPage extends React.Component {
@@ -41,7 +42,7 @@ export default class ContactDetailPage extends React.Component {
                 </div>
                 {
                     contact &&
-                    <div className="flex justify-center align-center mar-top-2rem">
+                    <div className="flex justify-center align-center mar-top-2rem contact-detail">
 
 
                         <h3 className="subtitle text-white marginless">  {contact.name} </h3>

@@ -1,6 +1,7 @@
 
 import React from 'react';
 import ContactService from '../services/ContactService'
+import '../css/contact-animation.css';
 
 export default class ContactEditPage extends React.Component {
 
@@ -38,7 +39,7 @@ export default class ContactEditPage extends React.Component {
                 </div>
 
                 {contact &&
-                    <div className="container width-80 mar-top-2rem" >
+                    <div className="container width-80 mar-top-2rem " >
 
                         <h1 className="subtitle is-3 text-center text-white"> Edit Contact</h1>
 
@@ -49,7 +50,7 @@ export default class ContactEditPage extends React.Component {
                         <h1 className="subtitle is-3 text-center text-white"> Add New Contact</h1>
                     </div>
                 }
-                <div className="container width-80">
+                <div className="container width-80 contact-edit">
 
                     <form className="flex justify-evenly mar-1rem" onSubmit={this.handleSubmit}>
 
