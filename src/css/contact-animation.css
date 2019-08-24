@@ -1,0 +1,8 @@
+.contact-user, .contact-detail, .contact-edit {
+    animation: slide-up 0.7s ease;
+    transition: all 0.35s;
+}
+/* .contact-edit {
+    animation: slide-in 0.7s ease;
+    transition: all 0.35s;
+} */

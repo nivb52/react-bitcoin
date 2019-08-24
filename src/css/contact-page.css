@@ -16,10 +16,9 @@
     margin-left: inherit;
     padding-top: 1rem;
 
-    animation: slide-up 0.7s ease;
-    transition: all 0.35s;
-
 }
+
+
 
 .contact-img {
     /* background-image: linear-gradient(to left bottom, #f68e06 , #99460f); */
