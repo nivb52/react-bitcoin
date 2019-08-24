@@ -1,14 +1,13 @@
-@import 'reset.css';
-@import 'layout.css';
-@import 'utills.css';
-@import 'margins.css';
-@import 'paddings.css';
-@import 'texts.css';
-@import 'forms.css';
-@import 'buttons.css';
-@import 'colors.css';
-@import 'animations.css';
-/* @import 'contact-page.css'; */
+@import 'global/reset.css';
+@import 'global/layout.css';
+@import 'global/utills.css';
+@import 'global/margins.css';
+@import 'global/paddings.css';
+@import 'global/texts.css';
+@import 'global/forms.css';
+@import 'global/buttons.css';
+@import 'global/colors.css';
+@import 'global/animations.css';
 
 body {
     background-color: #252525;
