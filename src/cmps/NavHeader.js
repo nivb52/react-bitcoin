@@ -9,7 +9,8 @@ import SignupPage from '../pages/SignupPage'
 import ContactPage from '../pages/ContactPage'
 import ContactDetailPage from '../pages/ContactDetailPage'
 import ContactEditPage from '../pages/ContactEditPage'
-import '../css/hamburger.css';
+import '../css/header/hamburger.css';
+
 
 
 export default function NavHeader() {

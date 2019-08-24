@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Logo} from './icons/LogoIcon.js'
-import '../css/header.css';
+import '../css/header/header.css';
 
 export default class LogoContainer extends Component {
     render() {
