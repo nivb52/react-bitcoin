@@ -17,7 +17,7 @@ body {
     margin: 0 auto;
     min-height: inherit;
     font-size: calc(1rem + 0.2vmin);
-    overflow: auto ;
+    overflow-y: auto ;
     scroll-behavior: smooth;
 }
 
