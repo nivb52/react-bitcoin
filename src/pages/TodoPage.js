@@ -59,7 +59,7 @@ export default class TodoPage extends React.Component {
                         }
                     </ol>
 
-                    <button className="button prim-bcg is-medium mar-top-3rem text-black width-50"
+                    <button className="btn bold-600 prim-bcg text-black-light btn-outline is-medium mar-top-3rem  width-50"
                         onClick={this.handleAdd}>Add
                         </button>
 

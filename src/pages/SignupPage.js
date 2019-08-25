@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 import UserService from '../services/UserService';
 import LogoContainer from '../cmps/LogoContainer'
-
+import '../css/signup-and-login.css'
 import { UserIcon } from '../cmps/icons/UserIcon.js';
 class SignupPage extends Component {
 
@@ -60,7 +60,7 @@ class SignupPage extends Component {
 
                     </div>
                     <div className="flex justify-center align-center mar-2rem ">
-                        <input className="login-btn prim-bcg pointer" type="submit" value="Submit" />
+                        <input className="login-btn prim-bcg text-black-light btn-outline pointer" type="submit" value="Sign up" />
                     </div>
                 </form>
 
