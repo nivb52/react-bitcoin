@@ -1,7 +1,9 @@
 
 import React from 'react';
 import ContactService from '../services/ContactService'
-import '../css/contact-animation.css';
+import TransferFund from '../cmps/TransferFund'
+
+import '../css/contact/contact-animation.css';
 
 
 export default class ContactDetailPage extends React.Component {
@@ -55,14 +57,17 @@ export default class ContactDetailPage extends React.Component {
                     </div>
 
                 }
-
+                <div className="flex mar-top-4rem">
+                    <TransferFund />
+                </div>
+                
                 <div className="flex-row justify-evenly mar-top-3rem">
                     <button className="btn btn-center-press transparent" onClick={this.handleEdit}> Edit </button>
                     <button className="btn btn-spinner mar-left-2rem transparent" onClick={this.deleteContact}>Delete</button>
                 </div>
 
                 {
-                    // EDIT CONTACT
+
 
 
                 }
