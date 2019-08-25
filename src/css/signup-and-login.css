@@ -1,0 +1,7 @@
+.login-btn, .signup-btn {
+    font-size: 1.5rem;
+    width: 80vw;
+    max-width: 250px;
+    height: 8vh;
+    border: none;
+}
