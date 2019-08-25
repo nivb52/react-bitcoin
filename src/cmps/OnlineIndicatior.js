@@ -34,7 +34,6 @@ class OnlineIndicator extends React.Component {
                 console.log('Fetching Error');
         }).finally(() => {
             // UPDTE THE NETWORK STATUS
-            console.log(isOnline);
             this.setState({
                 isOnline
             })
