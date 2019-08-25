@@ -2,6 +2,18 @@
 /* TEXT */
  /* ==================== */
 
+.uppercased {
+    text-transform: uppercase;
+}
+
+.lowercased {
+    text-transform: lowercase;
+}
+  
+.capitalized {
+    text-transform: capitalize;
+}
+
 .text-start{
     text-align: start;
 }
@@ -28,6 +40,13 @@
 .is-4 {
     font-size: 1.8rem !important;
 }
+.is-5 {
+    font-size: 1.6rem !important;
+}
+.is-6 {
+    font-size: 1.35rem !important;
+}
+
 .is-medium {
     font-size: 1.25rem !important;
 }
@@ -48,4 +67,7 @@
 
 .bold, .bold-700 {
     font-weight: 700;
+}
+.bold-light, .bold-600 {
+    font-weight: 600;
 }

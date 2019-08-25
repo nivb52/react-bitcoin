@@ -24,3 +24,17 @@
  .border-white-2px {
  	border: 2px solid #FFF;
  }
+
+ /* WIDTH */
+
+.width-full {
+	width: 100%;
+}
+
+.width-medium {
+	width: 10rem;
+}
+
+.width-small {
+	width: 5rem;
+}
