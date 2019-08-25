@@ -4,7 +4,8 @@ import '../css/online-indicator.css'
 class OnlineIndicator extends React.Component {
 
     state = {
-        isOnline: navigator.onLine
+        isOnline: navigator.onLine,
+        isNotMobile : navigator.platform === "Win32" || navigator.vendor ==="Apple Computer, Inc." || navigator.cookieEnabled 
     }
     componentDidMount() {
         this.OnlineID = setInterval(
@@ -20,24 +21,32 @@ class OnlineIndicator extends React.Component {
     tick() {
         // IN CHROME AND SAFARI 4+ YOU CANNOT KNOW FOR SURE 
         //IF YOU ARE ONLINE OR OFFLINE BY navigator.onLine
-        var isOnline
-        // fetch("http://myexternalip.com/json")
-        fetch("favication.ico")
-        .then((response) => {
-            if (response.status !== 200) {
-                console.log('Looks like there was a probelem. Status Code:' + response.status);
-                return 
-            }
-            isOnline = response.ok ? true : false
-            return isOnline
-        }).catch(() => {
+        if (this.state.isNotMobile) {
+
+            var isOnline
+            // fetch("http://myexternalip.com/json")
+            fetch("favicon.ico")
+            .then((response) => {
+                if (response.status !== 200) {
+                    console.log('Looks like there was a probelem. Status Code:' + response.status);
+                    return 
+                }
+                isOnline = response.ok ? true : false
+                return isOnline
+            }).catch(() => {
                 console.log('Fetching Error');
-        }).finally(() => {
-            // UPDTE THE NETWORK STATUS
-            this.setState({
-                isOnline
+            }).finally(() => {
+                // UPDTE THE NETWORK STATUS
+                this.setState({
+                    isOnline
+                })
             })
-        })
+        } else {
+            // NOT MOBILE
+            this.setState({
+                isOnline: navigator.onLine
+            })
+        }
     }
 
     render() {
