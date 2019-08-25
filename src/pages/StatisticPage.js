@@ -30,7 +30,7 @@ export default class StatisticPage extends Component {
         return (
             <section className="container width-80">
 
-                <h1 className="is-3 hover-white prim-color text-center mar-bottom-3rem">
+                <h1 className="size-3 hover-white prim-color text-center mar-bottom-3rem">
                     Bitcoin Statistics
                 </h1>
                 {

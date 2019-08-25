@@ -14,7 +14,7 @@ export default class Header extends Component {
             align-center pad-1rem">
 
             
-            <h1 className="subtitle is-3 text-white text-center marginless">
+            <h1 className="subtitle size-3 text-white text-center marginless">
                     Coding Academy
             </h1>
             <h2 className="text-white">{monthName} 2019</h2>

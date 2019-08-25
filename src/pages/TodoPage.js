@@ -45,21 +45,21 @@ export default class TodoPage extends React.Component {
         return (
             <section className="mar-left-5rem">
 
-                <h1 className="is-2 title text-white"> TODOS </h1>
+                <h1 className="size-2 title text-white"> TODOS </h1>
                 <div className="flex container">
 
 
 
                     <ol>
                         {this.state.todos.map((item, idx) =>
-                            <li className="is-medium mar-top-halfrem pointer"
+                            <li className="size-medium mar-top-halfrem pointer"
                                 onClick={() => this.handleShow(idx)}
                                 key={idx}>{item.txt}
                             </li>)
                         }
                     </ol>
 
-                    <button className="btn bold-600 prim-bcg text-black-light btn-outline is-medium mar-top-3rem  width-50"
+                    <button className="btn bold-600 prim-bcg text-black-light btn-outline size-medium mar-top-3rem  width-50"
                         onClick={this.handleAdd}>Add
                         </button>
 
@@ -67,9 +67,9 @@ export default class TodoPage extends React.Component {
                         {this.state.todoDetails &&
                             <div className="todo">
 
-                                <h2 className="subtitle is-4 text-white">
+                                <h2 className="subtitle size-4 text-white">
                                     {this.state.todoDetails.txt}
-                                    <span className="is-small mar-left-1rem">
+                                    <span className="size-small mar-left-1rem">
                                         {
                                             UtillService.createDateFromStamp(this.state.todoDetails.createdAt)
                                             //this.state.todoDetails.createdAt//.toLocaleDateString()

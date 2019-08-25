@@ -14,7 +14,7 @@ const transferFund = props => {
     return (
     <React.Fragment>
         <section className="container">
-            <div className="is-medium">
+            <div className="size-medium">
                 <span > Transfer coins to</span>
                 <span className="capitalized"> Name</span>
             </div>

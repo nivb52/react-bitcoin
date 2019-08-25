@@ -41,13 +41,13 @@ export default class ContactEditPage extends React.Component {
                 {contact &&
                     <div className="container width-80 mar-top-2rem " >
 
-                        <h1 className="subtitle is-3 text-center text-white"> Edit Contact</h1>
+                        <h1 className="subtitle size-3 text-center text-white"> Edit Contact</h1>
 
                     </div>
                 }
                 {!contact &&
                     <div className="mar-top-3rem">
-                        <h1 className="subtitle is-3 text-center text-white"> Add New Contact</h1>
+                        <h1 className="subtitle size-3 text-center text-white"> Add New Contact</h1>
                     </div>
                 }
                 <div className="container width-80 contact-edit">

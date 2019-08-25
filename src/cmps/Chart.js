@@ -9,7 +9,7 @@ export default class Chart extends Component {
         let color = this.props.color || 'black'
         return (
             <div>
-                <h2 className="subtitle is-4 text-center text-white">
+                <h2 className="subtitle size-4 text-center text-white">
                     {name} - for a {period}
                 </h2>
                 <p> {description} </p>

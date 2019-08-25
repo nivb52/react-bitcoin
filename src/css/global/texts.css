@@ -28,29 +28,29 @@
 }
 
 
-.is-1 {
+.size-1 {
     font-size: 3.5rem !important;
 }
-.is-2 {
+.size-2 {
     font-size: 2.5rem !important;
 }
-.is-3 {
+.size-3 {
     font-size: 2rem !important;
 }
-.is-4 {
+.size-4 {
     font-size: 1.8rem !important;
 }
-.is-5 {
+.size-5 {
     font-size: 1.6rem !important;
 }
-.is-6 {
+.size-6 {
     font-size: 1.35rem !important;
 }
 
-.is-medium {
+.size-medium {
     font-size: 1.25rem !important;
 }
-.is-small {
+.size-small {
     font-size: 0.7rem !important;
 }
 
