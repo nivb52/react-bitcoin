@@ -6,8 +6,8 @@ import React, { Component } from 'react';
 import ContactService from '../services/ContactService'
 import ContactList from '../cmps/ContactList'
 import ContactFilter from '../cmps/ContactFilter'
-import '../css/contact-page.css';
-import '../css/contact-animation.css';
+import '../css/contact/contact-page.css';
+import '../css/contact/contact-animation.css';
 
 
 export default class ContactPage extends Component {
