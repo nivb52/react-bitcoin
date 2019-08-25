@@ -19,12 +19,11 @@ export default class ContactFilter extends React.Component {
     handleSort = (el) => {
         const sortTerm = el.target.innerText.toLowerCase()
         // TAKE CARE ON isAscending
-        if (sortTerm === lastSort) isAscending = !isAscending
-        else isAscending = true
+        isAscending = !isAscending
         lastSort = sortTerm
         // END isAscending
-        
-        this.props.onSort(sortTerm,isAscending)  
+
+        this.props.onSort(sortTerm, isAscending)
     }
 
     render() {
@@ -45,15 +44,15 @@ export default class ContactFilter extends React.Component {
                         Sort By:
 
                     <button onClick={this.handleSort}
-                        className="inline transparent text-grey-light mar-left-1rem mar-top-1rem pointer">
-                        Name
+                            className="inline transparent text-grey-light mar-left-1rem mar-top-1rem pointer">
+                            Name
                     </button>
 
-                    <span>&nbsp;&nbsp;/</span>
+                        <span>&nbsp;&nbsp;/</span>
 
-                    <button onClick={this.handleSort}
-                        className="inline transparent text-grey-light mar-left-1rem mar-top-1rem pointer">
-                        Email
+                        <button onClick={this.handleSort}
+                            className="inline transparent text-grey-light mar-left-1rem mar-top-1rem pointer">
+                            Email
                     </button>
                     </div>
 
