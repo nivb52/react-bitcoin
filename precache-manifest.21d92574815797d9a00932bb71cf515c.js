@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0af1dcf88a53c2f044c150c034b6e13a",
+    "revision": "0c2574fa08ca06b6c54f4f573ca768b6",
     "url": "/react-bitcoin/index.html"
   },
   {
-    "revision": "7b6ccfddff75e9ab8cbb",
-    "url": "/react-bitcoin/static/css/main.40ea89d5.chunk.css"
+    "revision": "e06edb4c1ccf9daf250d",
+    "url": "/react-bitcoin/static/css/main.7885d944.chunk.css"
   },
   {
     "revision": "403cab71fdf6842da94f",
     "url": "/react-bitcoin/static/js/2.9d6a674f.chunk.js"
   },
   {
-    "revision": "7b6ccfddff75e9ab8cbb",
+    "revision": "e06edb4c1ccf9daf250d",
     "url": "/react-bitcoin/static/js/main.d330ca82.chunk.js"
   },
   {
