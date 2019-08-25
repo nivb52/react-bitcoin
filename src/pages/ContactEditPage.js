@@ -1,7 +1,7 @@
 
 import React from 'react';
 import ContactService from '../services/ContactService'
-import '../css/contact-animation.css';
+import '../css/contact/contact-animation.css';
 
 export default class ContactEditPage extends React.Component {
 
