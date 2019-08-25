@@ -1,0 +1,13 @@
+.transfer-input {
+    width: 50vw;
+    /* width: 43vw; */
+}
+
+.transfer-btn{
+    max-width: 100px;
+    /* max-width: 30vw; */
+    font-size: 1.5rem;
+    width: 80vw;
+    height: 8vh;
+    border: none;
+}
