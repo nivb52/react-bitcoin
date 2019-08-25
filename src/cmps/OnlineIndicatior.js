@@ -21,12 +21,12 @@ class OnlineIndicator extends React.Component {
         // IN CHROME AND SAFARI 4+ YOU CANNOT KNOW FOR SURE 
         //IF YOU ARE ONLINE OR OFFLINE BY navigator.onLine
         var isOnline
-
+        // fetch("favication.ico")
         fetch("http://myexternalip.com/json")
         .then((response) => {
             if (response.status !== 200) {
                 console.log('Looks like there was a probelem. Status Code:' + response.status);
-                return
+                return 
             }
             isOnline = response.ok ? true : false
             return isOnline
