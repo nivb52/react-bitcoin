@@ -1,11 +1,11 @@
 
 .header-container{
-    height: 13vh;
+    height: 12vh;
 }
 
-@media screen and (max-width:780px) {
+@media (max-width:780px) {
 .header-container{   
-     height: 18vh;
+     height: 22vh;
  }
 }
 
