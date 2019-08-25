@@ -10,6 +10,7 @@ import ContactPage from '../pages/ContactPage'
 import ContactDetailPage from '../pages/ContactDetailPage'
 import ContactEditPage from '../pages/ContactEditPage'
 import '../css/header/hamburger.css';
+import OnlineIndicator from './OnlineIndicatior';
 
 
 
@@ -21,12 +22,16 @@ export default function NavHeader() {
     }
 
     const menuRoutes = [
-                        {path:'/' , text: 'home'},
-                        {path:'/contacts' , text: 'contacts'},
-                        {path:'/charts' , text: 'charts'},
-                        {path:'/signup' , text: 'signup'},
-                        {path:'/todos' , text: 'todos'},
-                        ]
+        { path: '/', text: 'home' },
+        { path: '/contacts', text: 'contacts' },
+        { path: '/charts', text: 'charts' },
+        { path: '/signup', text: 'signup' },
+        { path: '/todos', text: 'todos' },
+    ]
+
+
+  
+    
     return (
 
         <Router >
@@ -44,21 +49,21 @@ export default function NavHeader() {
                         onClick={closeMenu}
                     >
                         {
-                        menuRoutes.map( (link, index) => 
-                        <NavLink 
-                        className="prim-color hover-white" 
-                        to={link.path} key={index}>
-                                <li>{link.text}</li>
-                        </NavLink>
-                        )
+                            menuRoutes.map((link, index) =>
+                                <NavLink
+                                    className="prim-color hover-white"
+                                    to={link.path} key={index}>
+                                    <li>{link.text}</li>
+                                </NavLink>
+                            )
                         }
-                        
+
                     </ul>
                 </div>
             </nav>
 
 
-
+            <OnlineIndicator/>
             <AppHeader />
 
             <Switch>
