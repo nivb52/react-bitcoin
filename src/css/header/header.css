@@ -1,9 +1,9 @@
 
 .header-container{
-    height: 12vh;
+    height: 13vh;
 }
 
-@media screen and (max-width:620px) {
+@media screen and (max-width:780px) {
 .header-container{   
      height: 18vh;
  }
