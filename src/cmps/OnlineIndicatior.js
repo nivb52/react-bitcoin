@@ -25,9 +25,9 @@ class OnlineIndicator extends React.Component {
 
             var isOnline
             // fetch("http://myexternalip.com/json")
-            fetch("favicon.ico")
+            fetch("https://nivb52.github.io/react-bitcoin/favicon.ico")
             .then((response) => {
-                if (response.status !== 200) {
+                if (response.status !== 200 && response.status !== 404) {
                     console.log('Looks like there was a probelem. Status Code:' + response.status);
                     return 
                 }
