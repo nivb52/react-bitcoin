@@ -1,27 +1,27 @@
+ /* PRECENT AND REM AND USFUL */
 
-/* WIDTH */
-.width-90 {
-    width: 90%;
-}
-.width-80 {
-    width: 80%;
-}
-.width-50, .width-half {
-    width: 50%;
+ .width-full {
+	width: 100% !important;
 }
 
-.width-33, .width-third {
-    width: 33%;
+.width-medium {
+	width: 10rem !important;
 }
-.width-25, .witdh-quarter {
-    width: 25%;
+
+.width-small {
+	width: 5rem !important;
 }
-.width-20,.width-fifth {
-    width: 120%;
+.width-inherit{
+    width: inherit !important;
 }
-.width-10 {
-    width: 10%;
+.width-auto{
+    width: auto !important;
 }
+
+
+
+
+/* VMIN */
 
 .width-50vmin {
     width:50vmin;
@@ -42,16 +42,27 @@
     width:10vmin;
 }
 
- /* WIDTH */
 
- .width-full {
-	width: 100%;
+/*  MORE WIDTH OPTIONS */
+.width-90 {
+    width: 90%;
+}
+.width-80 {
+    width: 80%;
+}
+.width-50, .width-half {
+    width: 50%;
 }
 
-.width-medium {
-	width: 10rem;
+.width-33, .width-third {
+    width: 33%;
 }
-
-.width-small {
-	width: 5rem;
+.width-25, .witdh-quarter {
+    width: 25%;
+}
+.width-20,.width-fifth {
+    width: 20%;
+}
+.width-10 {
+    width: 10%;
 }
