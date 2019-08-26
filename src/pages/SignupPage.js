@@ -60,21 +60,23 @@ class SignupPage extends Component {
 
                     </div>
                     <div className="flex justify-center align-center mar-2rem ">
-                        <input className="login-btn prim-bcg text-black-light btn-outline pointer" type="submit" value="Sign up" />
+                        <input className="login-btn prim-bcg text-black-light btn-outline pointer" 
+                        type="submit" value="Sign up" />
                     </div>
                 </form>
 
 
                 <div className="flex justify-center align-center ">
-                    <div className="text-grey-light pointer hover-white underline">Don't have an account? Just enter your name</div>
-                    <div className="text-grey-light pointer hover-white mar-1rem"
-                        onClick={this.handleLogout}>
-                            logout ?
+                    <div className="text-grey-light pointer hover-white tooltip tooltip--white tooltip--right">
+                            Don't have an account?
+                        <span className="tooltiptext tooltiptext--white tooltiptext--right">
+                        Just enter your name
+                        </span> 
                     </div>
-                    {/* TODO-IN-APP: add full signup
-                    <div className="text-grey-light pointer hover-white mar-1rem">Forgot your password?</div>
-                    <div className="text-grey-light pointer hover-white">Don't have an account? Create one</div>
-                    */}
+                    <div className="text-grey-light pointer capitalized hover-white mar-1rem"
+                        onClick={this.handleLogout}>
+                            logout
+                    </div>
                 </div>
 
             </section>
@@ -82,5 +84,12 @@ class SignupPage extends Component {
     }
 
 }
+
+
+// const mapDispatchToProps = dispatch => {
+//     return {
+//       payload: () => dispatch({type: 'SOMETHING',  })
+//     }
+//   }
 
 export default SignupPage
