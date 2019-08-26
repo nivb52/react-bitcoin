@@ -6,8 +6,8 @@
 }
 .dot {
     position: absolute;
-    left: 90%;
-    top: 6%;
+    top: 5vh;
+    right: 5vw;
 
     animation: blink 2s infinite;
 }

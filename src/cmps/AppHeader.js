@@ -10,14 +10,13 @@ export default class Header extends Component {
 
         return (
 
-            <header className="header-container flex justify-center 
-            align-center pad-1rem">
+            <header className="header-container flex center pad-1rem">
 
             
             <h1 className="subtitle size-3 text-white text-center marginless">
                     Coding Academy
             </h1>
-            <h2 className="text-white">{monthName} 2019</h2>
+            <h2 className="text-white mar-top-halfrem">{monthName} 2019</h2>
             
             
 
