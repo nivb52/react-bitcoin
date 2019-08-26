@@ -7,8 +7,6 @@ import React from 'react'
 // import './contact-filter.css';
 
 let isAscending = true
-let lastSort = null
-
 export default class ContactFilter extends React.Component {
 
 
@@ -20,9 +18,7 @@ export default class ContactFilter extends React.Component {
         const sortTerm = el.target.innerText.toLowerCase()
         // TAKE CARE ON isAscending
         isAscending = !isAscending
-        lastSort = sortTerm
         // END isAscending
-
         this.props.onSort(sortTerm, isAscending)
     }
 
