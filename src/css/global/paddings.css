@@ -8,6 +8,11 @@
 .pad-1rem {
     padding: 1rem;
 }
+
+.pad-1halfrem, .pad-1p5rem {
+    padding: 1.5rem;
+}
+
 .pad-2rem {
     padding: 2rem;
 }
