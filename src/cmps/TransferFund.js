@@ -4,42 +4,62 @@
 1) call to UserService to add a move.
 2) reduce from the user balance (this money goes nowhere!) using the
 UserService.
+          - TransferFund   props: contact, maxCoins, onTransferCoins
+
 */
 
-// LETS BUILD REACT HOOK
+
 import React from 'react'
 import '../css/transfer-fund.css'
 
-const transferFund = props => {
-    return (
-    <React.Fragment>
-        <section className="container">
-            <div className="size-medium">
-                <span > Transfer coins to</span>
-                <span className="capitalized"> Name</span>
-            </div>
-            <div className="flex-row">
+class transferFund extends React.Component {
 
-                <input className="input-box transfer-input"
-                    placeholder="฿"
-                    type="number" min="0" max="25" required
-                />
-                <span> &nbsp;&nbsp;&nbsp;</span>
-                <button
-                    className="transfer-btn btn-outline prim-bcg capitalized width-medium pointer">
-                    ↪
-                    {/* → */}
-                    {/* ⇒ */}
-                    {/* ⇾ */}
-                    {/* ฿ */}
-                </button>
-            </div>
-        </section>
+    state = {
+        amount: ''
+    }
+
+    handleTransfer = e => {
+        console.log(this.state.amount, 'to ', this.props.id);
+        //maxCoins
+        //- when submitted (call to onTransferCoins):
+
+    }
+
+    handleChange = e => {
+        this.setState({ amount: e.target.value });
+    }
+
+    render() {
+        /* ฿ → ⇒ ⇾ ↪*/
+        const buttonChar = navigator.platform === "Win32" ? '↪' : '⇒'
+        return (
+
+            <section className="container">
+                <div className="size-medium mar-bottom-2rem text-center">
+                    <span className=""> Transfer coins to</span>
+                    <span className="capitalized"> {this.props.name}</span>
+                </div>
+                <div className="flex-row">
+
+                    <input onChange={this.handleChange}
+                        className="input-box transfer-input"
+                        placeholder="฿"
+                        type="number" min="0" max="25" required
+                    />
+                    <span> &nbsp;&nbsp;&nbsp;</span>
+                    <button
+                        onClick={this.handleTransfer}
+                        className="transfer-btn btn-outline prim-bcg capitalized width-medium pointer">
+                        
+                        {buttonChar}
+
+                    </button>
+                </div>
+            </section>
 
 
-    </React.Fragment>
-    );
+        );
+    }
 }
-
 
 export default transferFund
