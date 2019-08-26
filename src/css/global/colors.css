@@ -1,9 +1,9 @@
-
-.prim-color {
+/* COLORS AND TEXTS  */
+.prim-color, .text-prim {
     color:#ebb811;
 }
 
-.prim-bcg {
+.prim-bcg, .text-bcg {
     background-color: #ebb811;
 }
 .prim-bcg-hover:hover {
@@ -11,7 +11,7 @@
     background-color: transparent;
 }
 
-.scnd-color {
+.scnd-color, .text-scnd {
   color:#dc143ce6;
 }
 
