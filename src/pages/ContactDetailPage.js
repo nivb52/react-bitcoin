@@ -44,23 +44,25 @@ export default class ContactDetailPage extends React.Component {
                 </div>
                 {
                     contact &&
-                    <div className="flex justify-center align-center mar-top-2rem contact-detail">
+                    <section>
+
+                        <div className="flex justify-center align-center mar-top-2rem contact-detail">
 
 
-                        <h3 className="subtitle text-white marginless">  {contact.name} </h3>
-                        <img alt={contact.name} className="width-20vmin"
-                            src={`https://robohash.org/${contact.name}.png`}></img>
+                            <h3 className="subtitle text-white marginless">  {contact.name} </h3>
+                            <img alt={contact.name} className="width-13vmin"
+                                src={`https://robohash.org/${contact.name}.png`}></img>
 
-                        <span className="mar-1rem">{contact.email} </span>
-                        <span> {contact.phone}  </span>
+                            <span className="mar-1rem">{contact.email} </span>
+                            <span> {contact.phone}  </span>
 
-                    </div>
-
+                        </div>
+                        <div className="flex mar-top-4rem">
+                            <TransferFund name={contact.name} id={this.props.match.params} />
+                        </div>
+                    </section>
                 }
-                <div className="flex mar-top-4rem">
-                    <TransferFund />
-                </div>
-                
+
                 <div className="flex-row justify-evenly mar-top-3rem">
                     <button className="btn btn-center-press transparent" onClick={this.handleEdit}> Edit </button>
                     <button className="btn btn-spinner mar-left-2rem transparent" onClick={this.deleteContact}>Delete</button>
