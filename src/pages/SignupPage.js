@@ -2,15 +2,19 @@
 
 import React, { Component } from 'react';
 import UserService from '../services/UserService';
-import LogoContainer from '../cmps/LogoContainer'
-import '../css/signup-and-login.css'
+import { connect } from 'react-redux';
+
+import LogoContainer from '../cmps/LogoContainer';
+import '../css/signup-and-login.css';
 import { UserIcon } from '../cmps/icons/UserIcon.js';
+
+
 class SignupPage extends Component {
 
     //ONE WAY IN REACT TO USE 'THIS'
     constructor() {
         super()
-        this.state = { value: '' };
+        this.state = { value: ''};
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleLogout = this.handleLogout.bind(this);
@@ -20,8 +24,8 @@ class SignupPage extends Component {
         event.preventDefault();
         const currUser = UserService.signup(this.state.value)
         console.log('curr User', currUser);
-        const { history } = this.props;
-        history.push('/contacts');
+        // REDIRECT
+        this.props.history.push('/');
     }
 
     handleChange(event) {
@@ -29,9 +33,9 @@ class SignupPage extends Component {
     }
 
     handleLogout() {
-        const currUser = UserService.logout()
-        const { history } = this.props;
-        history.push('/');
+        UserService.logout()
+        // REDIRECT
+        this.props.history.push('/charts');
     }
 
     render() {
@@ -67,9 +71,12 @@ class SignupPage extends Component {
 
 
                 <div className="flex justify-center align-center ">
-                    <div className="text-grey-light pointer hover-white tooltip tooltip--white tooltip--right">
+                    <div className="text-grey-light pointer hover-white 
+                    tooltip tooltip--white tooltip--right">
                             Don't have an account?
-                        <span className="tooltiptext tooltiptext--white tooltiptext--right">
+
+                        <span className="tooltiptext tooltiptext--white 
+                        tooltiptext--right">
                         Just enter your name
                         </span> 
                     </div>
@@ -83,13 +90,19 @@ class SignupPage extends Component {
         )
     }
 
+    
 }
 
+const mapStateToProps = state => {
+    return {
+      user : state.user
+    }
+  }
+    
+const mapDispatchToProps = dispatch => {
+    return {
+        loginUser: () => dispatch({type: 'LOGIN', currUser: 'Muki' })
+    }
+}
 
-// const mapDispatchToProps = dispatch => {
-//     return {
-//       payload: () => dispatch({type: 'SOMETHING',  })
-//     }
-//   }
-
-export default SignupPage
+export default connect(mapStateToProps,mapDispatchToProps)(SignupPage)

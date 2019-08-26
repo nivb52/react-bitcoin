@@ -1,37 +1,48 @@
-// Use UserService.getUser and BitcoinService and display:
-//  User Name and Coins
-import React, { Component } from 'react';
+// display: User Name and Coins
 
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import MovesList from '../cmps/MovesList';
 
 class Home extends Component {
 
 
   render() {
+    const {moves} = this.props;
+    const {user} = this.props
+    const {_id} = this.props
+
+    // if (!_id)  this.props.history.push('/signup')
+
     return (
    <section className="flex container center width-90">
       <div className="pad-1rem">
-        <h1 className="title capitalized size-3"> hello <span> name</span></h1>
-        
-        <div className="flex-row justify-evenly size-6 pad-top-2rem">
-          <span className="capitalized "> coines </span>
-          <span> 100 </span>
+        <h1 className="title capitalized size-3 text-center"> 
+        hello 
+        <span className="prim-color"> {user.name}</span>
+        </h1>
+        <div className="bold prim-bcg text-center 
+         mar-top-1rem text-black btn  width-inherit"> 
+          <span className="capitalized">
+            your balance
+            </span>
+        </div>
+        <div className="pad-top-2rem"></div>
+        <div className="flex-row justify-evenly ">
+          <span className="size-1"> {user.coines} </span>
+          <span className=" uppercased text-center size-medium"> btc </span>
         </div>
         <div className="flex-row justify-evenly size-6 pad-top-2rem">
-          <span className="uppercased"> btc </span>
+          <span className="capitalized">rate </span>
           <span> 1 </span>
+          <span> $ </span>
         </div>
       </div>
 
-        <div>
-          <p className="width-50 mar-top-3rem">
-           TODO: <br/>
-          - MovesList  props: title, moves
-          - TransferFund   props: contact, maxCoins, onTransferCoins
+        <div className="width-50 mar-top-3rem text-left">
             
-        </p>
-
-        </div>
+        <MovesList lastMoves={moves}/>
+          </div>
     </section>
     );
   }
@@ -39,10 +50,10 @@ class Home extends Component {
 
 const mapStateToProps = state => {
   return {
-
+    user : state.user
   }
 }
 
-// const mapDispatchToProps
 
-export default Home
+
+export default connect(mapStateToProps)(Home)
