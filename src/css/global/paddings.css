@@ -24,6 +24,9 @@
 
 
 /* /left/ */
+.pad-left-halfrem, .pad-left-0p5rem {
+    padding-left: 0.5rem;
+}
 .pad-left-1rem {
     padding-left: 1rem;
 }
@@ -41,8 +44,30 @@
 }
 
 
+
+/* /right/ */
+.pad-right-halfrem, .pad-right-0p5rem {
+    padding-right: 0.5rem;
+}
+.pad-right-1rem {
+    padding-right: 1rem;
+}
+.pad-right-2rem {
+    padding-right: 2rem;
+}
+.pad-right-3rem {
+    padding-right: 3rem;
+}
+.pad-right-4rem {
+    padding-right: 4rem;
+}
+.pad-left-5rem {
+    padding-left: 5rem;
+}
+
+
 /* /top/ */
-.pad-top-halfrem {
+.pad-top-halfrem, .pad-top-0p5rem {
     padding-top: 0.5rem;
 }
 .pad-top-1rem {
