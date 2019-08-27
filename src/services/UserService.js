@@ -28,7 +28,8 @@ function logout() {
         storageService.store(USER_KEY, null)
         return true
     } else {
-        return 'you are not logged in'
+        // console.log('you are not logged in')
+        return false 
     }
 }
 
@@ -45,11 +46,8 @@ function addMove(contact, amount) {
 }
 
 function getUser() {
-    return {
-        name: 'Puki',
-        coins: 100,
-        moves: []
-    }
+    const currUser = storageService.load(USER_KEY) || null
+    return currUser
 }
 
 
