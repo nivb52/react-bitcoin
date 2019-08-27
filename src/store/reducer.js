@@ -1,8 +1,8 @@
 const intialState = {
     user: {
         _id: null,
-        name: 'Puki',
-        coins: 100,
+        name: '',
+        coins: null,
         moves: []
     }
 
@@ -14,7 +14,6 @@ const reducer = (state = intialState, action) => {
             console.log(state);
             return state.user = action.currUser
 
-            
         default:
             return state
             
