@@ -1,19 +1,24 @@
+import UserService from '../services/UserService';
+
+
 const intialState = {
     user: {
-        _id: null,
-        name: '',
-        coins: null,
-        moves: []
+        ...UserService.getUser()
     }
 
 }
 
 const reducer = (state = intialState, action) => {
+    // const user = {}
+    
     switch (action.type) {
         case 'LOGIN':
-            console.log(state);
-            return state.user = action.currUser
-
+            // state.user =  { ...UserService.getUser()  }
+            state.user =  action.user
+            console.log(action);
+            return state.user
+            
+        case 'MOVE':
         default:
             return state
             
