@@ -23,9 +23,12 @@ class SignupPage extends Component {
     handleSubmit(event) {
         event.preventDefault();
         const currUser = UserService.signup(this.state.value)
-        console.log('curr User', currUser);
+        console.log('login as: ', currUser);
         // REDIRECT
-        this.props.history.push('/');
+        setTimeout( () =>
+            this.props.history.push('/')
+            ,500
+        )
     }
 
     handleChange(event) {
@@ -35,7 +38,10 @@ class SignupPage extends Component {
     handleLogout() {
         UserService.logout()
         // REDIRECT
-        this.props.history.push('/charts');
+        setTimeout( () =>
+            this.props.history.push('/charts')
+            ,500
+        )
     }
 
     render() {
@@ -93,16 +99,11 @@ class SignupPage extends Component {
     
 }
 
-const mapStateToProps = state => {
-    return {
-      user : state.user
-    }
-  }
-    
+
 const mapDispatchToProps = dispatch => {
     return {
-        loginUser: () => dispatch({type: 'LOGIN', currUser: 'Muki' })
+        loginUser: (currUser) => dispatch({type: 'LOGIN', user: currUser})
     }
 }
 
-export default connect(mapStateToProps,mapDispatchToProps)(SignupPage)
+export default connect(null,mapDispatchToProps)(SignupPage)
