@@ -4,14 +4,31 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import MovesList from '../cmps/MovesList';
 
-class Home extends Component {
+import BitcoinService from '../services/BitcoinService'
 
+class Home extends Component {
+  state = {
+    rate: null
+  }
+
+  async componentDidMount() {
+   let usdToBtcRate
+    try {
+      usdToBtcRate = await BitcoinService.getRatePrm(1)
+      usdToBtcRate = 1/usdToBtcRate
+      usdToBtcRate = usdToBtcRate.toFixed(2)
+    } catch {
+      usdToBtcRate =  'check again later'
+    }
+      this.setState({rate: usdToBtcRate})
+  }
 
   render() {
     const {moves} = this.props;
     const {user} = this.props
     const {_id} = this.props
-
+    const {rate} = this.state
+    
     // if (!_id)  this.props.history.push('/signup')
 
     return (
@@ -22,7 +39,7 @@ class Home extends Component {
         <span className="prim-color"> {user.name}</span>
         </h1>
         <div className="bold prim-bcg text-center 
-         mar-top-1rem text-black btn  width-inherit"> 
+         mar-top-1rem text-black btn btn-small width-inherit"> 
           <span className="capitalized">
             your balance
             </span>
@@ -33,9 +50,8 @@ class Home extends Component {
           <span className=" uppercased text-center size-medium"> btc </span>
         </div>
         <div className="flex-row justify-evenly size-6 pad-top-2rem">
-          <span className="capitalized">rate </span>
-          <span> 1 </span>
-          <span> $ </span>
+          <span className="capitalized">1฿ = &nbsp;</span>
+          <span>{rate} &nbsp;$ </span>
         </div>
       </div>
 

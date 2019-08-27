@@ -37,6 +37,11 @@ button:active {
 	
 }
 
+.btn-small {
+	height: 2rem;
+    line-height: 2rem;
+}
+
   /* PRIM-COLOR */
 .btn-outline:hover {
     border: solid 2px #ebb811;
