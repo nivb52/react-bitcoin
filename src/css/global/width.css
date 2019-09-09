@@ -66,3 +66,27 @@
 .width-10 {
     width: 10%;
 }
+
+/*  MORE WIDTH OPTIONS */
+.width-90 {
+    max-width: 90vw;
+}
+.max-width-80 {
+    max-width: 80vw;
+}
+.max-width-50, .max-width-half {
+    max-width: 50vw;
+}
+
+.max-width-33, .max-width-third {
+    max-width: 33vw;
+}
+.max-width-25, .witdh-quarter {
+    max-width: 25vw;
+}
+.max-width-20,.max-width-fifth {
+    max-width: 20vw;
+}
+.max-width-10 {
+    max-width: 10vw;
+}
