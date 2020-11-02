@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Example: https://nivb52.github.com/react-bitcoin
+View Example: https://nivb52.github.io/react-bitcoin/
 
 
 ## Available Scripts
